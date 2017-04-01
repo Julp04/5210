@@ -89,10 +89,7 @@ class LoginViewController: UIViewController {
     
     func loginUser()
     {
-        
         loginButton.startLoadingAnimation()
-        
-        //User is loggin in with email
         loginWithEmail()
     }
     
@@ -118,41 +115,6 @@ class LoginViewController: UIViewController {
         }
     }
     
-    func loginWithUsername()
-    {
-        //User is loggin in with username
-        
-        let ref = FIRDatabase.database().reference()
-        let usernamesRef = ref.child("usernames")
-        let currentTypedUserRef = usernamesRef.child(emailField.text!)
-        
-        currentTypedUserRef.observeSingleEvent(of: .value, with: { snapshot in
-            
-            guard snapshot.exists() else {
-                self.emailField.errorMessage = "Invalid Username"
-                self.loginButton.stopLoadingAnimation()
-                return
-            }
-            
-            usernamesRef.observeSingleEvent(of: .value, with: {snapshot in
-                let values = snapshot.value as! NSDictionary
-                let email = values[self.emailField.text!] as! String
-                
-                FIRAuth.auth()?.signIn(withEmail: email, password: self.passwordField.text!) {user, error in
-                    if error != nil {
-                        self.loginButton.stopLoadingAnimation()
-                        self.passwordField.errorMessage = "Invalid Password"
-                        print(error!)
-                    }else {
-                        let mainVC = UIStoryboard(name:"Main", bundle:nil).instantiateViewController(withIdentifier: "MainControllerNav") as! UINavigationController
-                        self.loginButton.startFinishAnimationWith(currentVC: self, viewController: mainVC)
-                    }
-                }
-            })
-        })
-
-    }
-
     func forgotPassword()
     {
         var hitReset = 0
