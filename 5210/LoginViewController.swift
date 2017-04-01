@@ -33,7 +33,7 @@ class LoginViewController: UIViewController {
             emailField.iconFont = UIFont.fontAwesome(ofSize: 15)
             emailField.iconText = "\u{f007}"
             
-            emailField.selectedIconColor = UIColor.white
+            emailField.selectedIconColor = #colorLiteral(red: 0.1168564659, green: 0.5970480165, blue: 1, alpha: 1)
             emailField.iconMarginBottom = -2.0
             
             emailField.delegate = self
@@ -44,7 +44,7 @@ class LoginViewController: UIViewController {
             passwordField.iconFont = UIFont.fontAwesome(ofSize: 15)
             passwordField.iconText = "\u{f023}"
             
-            passwordField.selectedIconColor = UIColor.white
+            passwordField.selectedIconColor = #colorLiteral(red: 0.1168564659, green: 0.5970480165, blue: 1, alpha: 1)
             passwordField.iconMarginBottom = -2.0
             
             passwordField.delegate = self
@@ -76,10 +76,13 @@ class LoginViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9687103426, green: 0.4208184945, blue: 0, alpha: 1)
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : #colorLiteral(red: 0.9687103426, green: 0.4208184945, blue: 0, alpha: 1),
+                                    NSFontAttributeName : UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightRegular)]
         
         
-        self.view.backgroundColor = UIColor.blue
+        self.view.backgroundColor = UIColor.white
     }
     
     //MARK: User Interaction
@@ -87,13 +90,7 @@ class LoginViewController: UIViewController {
     func loginUser()
     {
         
-       
-        
         loginButton.startLoadingAnimation()
-        guard (emailField.text?.contains("@"))! else {
-            loginWithUsername()
-            return
-        }
         
         //User is loggin in with email
         loginWithEmail()
@@ -187,8 +184,8 @@ class LoginViewController: UIViewController {
         alert.doneActionBlock {
             hitReset = 1
         }
-        alert.colorScheme = UIColor.blue
-        alert.showAlert(inView: self, withTitle: "Reset Password", withSubtitle: "Please enter your email and we'll send a link to reset it!", withCustomImage: #imageLiteral(resourceName: "lock"), withDoneButtonTitle: "Reset Password", andButtons: nil)
+        alert.colorScheme = #colorLiteral(red: 0.9687103426, green: 0.4208184945, blue: 0, alpha: 1)
+        alert.showAlert(inView: self, withTitle: "Reset Password", withSubtitle: "Please enter your email and we'll send a link to reset it!", withCustomImage:#imageLiteral(resourceName: "lock") , withDoneButtonTitle: "Reset Password", andButtons: nil)
     }
     
     //MARK:Helper Functions

@@ -23,16 +23,15 @@ class OnboardViewController: UIViewController {
     let kSubtitleHeight:CGFloat = 110
     let kSubtitleYOffsetLength:CGFloat = 30
     
-    let kvideoURLString = "onboard.mp4"
-    
-    //Hey
-    
     //MARK: Properties
     
     var backgroundPlayer : BackgroundVideo? // Declare an instance of BackgroundVideo called backgroundPlayer
     
-    let titleArray = ["Wecome", "Create", "Scan", "Connect"]
-    let subtitleArray = ["Connecting with friends has never been so easy. Use QNectcodes to quickly exchange info with friends", "Add contact info and other details to easily create your personal QNectcode", "Retreive users' info by quickly scanning their QNectcode. No internet connection required!", "Link different accounts like Twitter to easily follow other users without leaving the app"]
+    let titleArray = ["Welcome", "5", "2", "1", "0"]
+    let subtitleArray = ["Welcome to 5210! Keeping your kids healthy and active has never been as easy as...", "Eat healthy and smart by eating 5 or more fruits and vegetables a day", "Stay focused by limitin screen time to two hours a day", "Stay fit by excersing and playing at least 1 hour a day", "Consume more water and drink 0 sugary drinks each day"]
+    
+    let imageArray = [#imageLiteral(resourceName: "5210"),#imageLiteral(resourceName: "5"), #imageLiteral(resourceName: "2"), #imageLiteral(resourceName: "1"), #imageLiteral(resourceName: "0")]
+    let colorArray = [#colorLiteral(red: 0.1764705926, green: 0.01176470611, blue: 0.5607843399, alpha: 1), #colorLiteral(red: 0.818329632, green: 0.02533760283, blue: 0.04497174916, alpha: 1), #colorLiteral(red: 0.9687103426, green: 0.4208184945, blue: 0, alpha: 1), #colorLiteral(red: 0, green: 0.5929370241, blue: 0.1599473397, alpha: 1), #colorLiteral(red: 0.1168564659, green: 0.5970480165, blue: 1, alpha: 1)]
     
     override var prefersStatusBarHidden: Bool {
         return true
@@ -49,15 +48,14 @@ class OnboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        backgroundPlayer = BackgroundVideo(on: self, withVideoURL: kvideoURLString)
-        backgroundPlayer?.setUpBackground()
+        
         
         configureScrollView()
         
         self.pageControl.numberOfPages = titleArray.count
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
-        view.backgroundColor = UIColor.black
+        view.backgroundColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,17 +81,23 @@ class OnboardViewController: UIViewController {
     {
         
         for i in 0..<titleArray.count {
+            
+            let color = colorArray[i]
         
             let size = view.bounds.size
             
             let xOffset = (size.width * CGFloat(i))
             let yOffset = size.height / 2.0 + kTitleYOffsetLength
             
+            let imageView = UIImageView(frame: CGRect(x: xOffset + 90, y: yOffset - 230, width: 200, height: 200))
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = imageArray[i]
+            
             
             let titleFrame = CGRect(x: xOffset, y: yOffset, width: size.width - 10, height: kTitleHeight)
             let titleLabel = UILabel(frame: titleFrame)
             titleLabel.text = titleArray[i]
-            titleLabel.textColor = UIColor.white
+            titleLabel.textColor = color
             
             let normalFont = UIFont(name: "Gill Sans", size: kTitleFontSize)!
             let boldFont = UIFont(descriptor: normalFont.fontDescriptor.withSymbolicTraits(UIFontDescriptorSymbolicTraits.traitBold)!, size: kTitleFontSize)
@@ -110,13 +114,14 @@ class OnboardViewController: UIViewController {
             let subtitleFont = UIFont(name: "Helvetica Neue", size: kSubtitleFontSize)
             subtitleTextView.font = subtitleFont
             subtitleTextView.backgroundColor = UIColor.clear
-            subtitleTextView.textColor = UIColor.white
+            subtitleTextView.textColor = color
             subtitleTextView.isScrollEnabled = false
             subtitleTextView.isEditable = false
             subtitleTextView.isUserInteractionEnabled = false
             
             scrollView.addSubview(titleLabel)
             scrollView.addSubview(subtitleTextView)
+            scrollView.addSubview(imageView)
         }
     }
 }
