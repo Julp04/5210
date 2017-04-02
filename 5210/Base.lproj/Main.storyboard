@@ -57,7 +57,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="D2U-RS-YOj" kind="show" id="aUS-Mp-1BS"/>
+                                    <segue destination="D2U-RS-YOj" kind="show" id="0VV-yN-ZUc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7EC-TH-mWB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1192.8" y="-1755.4722638680662"/>
+            <point key="canvasLocation" x="1170" y="-1791"/>
         </scene>
         <!--Signup Controller-->
         <scene sceneID="kBc-fZ-Ps9">
@@ -657,7 +657,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zLW-ME-JsA" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240.8000000000002" y="-1755.4722638680662"/>
+            <point key="canvasLocation" x="2052" y="-1830"/>
         </scene>
         <!--Five210 View Controller-->
         <scene sceneID="eRe-1s-emH">
@@ -734,7 +734,7 @@
                                         <rect key="frame" x="184" y="0.0" width="159" height="128"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hi Julian!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh4-AV-xM8">
-                                                <rect key="frame" x="0.0" y="0.0" width="159" height="69"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="62"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="159" id="kQy-F8-9d3"/>
                                                 </constraints>
@@ -742,12 +742,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnf-Kq-CHx">
-                                                <rect key="frame" x="0.0" y="99" width="159" height="29"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnf-Kq-CHx">
+                                                <rect key="frame" x="0.0" y="92" width="159" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="159" id="e4R-0q-t4d"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <string key="text">Enter today’s 5-2-1-0 
+amounts below…</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -1003,30 +1005,30 @@
                     </view>
                     <navigationItem key="navigationItem" id="yPY-Dm-gfm"/>
                     <connections>
+                        <outlet property="activityImageView" destination="VSB-aZ-u3r" id="Zcw-TD-Xdm"/>
+                        <outlet property="activityStar2" destination="cue-Ed-WOi" id="Kiq-ab-CbA"/>
+                        <outlet property="activityStarThree" destination="Ie8-nm-WUB" id="MGJ-t1-07A"/>
                         <outlet property="avatarImageView" destination="vhD-3B-wdh" id="ksn-ib-YLi"/>
                         <outlet property="directionsLabel" destination="pnf-Kq-CHx" id="RKu-Pw-4xZ"/>
-                        <outlet property="fiveImageView" destination="SYA-dU-QHS" id="ShE-ml-0Lg"/>
-                        <outlet property="fiveStarViewTHREE" destination="JoC-9D-1GI" id="T0J-4S-uci"/>
-                        <outlet property="fiveStarViewTWO" destination="mlW-k0-Xne" id="x0L-U2-KQ5"/>
+                        <outlet property="drinksImageView" destination="lq3-3F-jmp" id="PEz-el-7Gq"/>
+                        <outlet property="drinksStar" destination="Aol-02-Awm" id="zbS-du-HQo"/>
+                        <outlet property="fruitStars2" destination="mlW-k0-Xne" id="z0O-TE-jIG"/>
+                        <outlet property="fruitStarsThree" destination="JoC-9D-1GI" id="wDq-jb-iYu"/>
+                        <outlet property="fruitsImageView" destination="SYA-dU-QHS" id="l8n-h4-G2m"/>
                         <outlet property="imageStackView" destination="keG-cH-9IH" id="OAL-1v-OM9"/>
-                        <outlet property="oneImageView" destination="VSB-aZ-u3r" id="zQB-FY-Ygi"/>
-                        <outlet property="oneStarViewTHREE" destination="Ie8-nm-WUB" id="e3c-i9-nNc"/>
-                        <outlet property="oneStarViewTWO" destination="cue-Ed-WOi" id="AML-EQ-eQa"/>
-                        <outlet property="twoImageView" destination="4if-FS-Pbk" id="4Qd-ha-UyP"/>
-                        <outlet property="twoStarView" destination="IjO-F4-ZWR" id="yr5-gA-DpD"/>
+                        <outlet property="screenStar" destination="IjO-F4-ZWR" id="A41-EZ-WVm"/>
+                        <outlet property="screenTimeImageView" destination="4if-FS-Pbk" id="4wI-N3-gPr"/>
                         <outlet property="welcomeLabel" destination="sh4-AV-xM8" id="Q1J-Mj-66E"/>
-                        <outlet property="zeroImageView" destination="lq3-3F-jmp" id="6cj-RD-wHK"/>
-                        <outlet property="zeroStarView" destination="Aol-02-Awm" id="Gqr-G9-SMq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dbg-Ez-MzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6191.1999999999998" y="-1330.8845577211396"/>
         </scene>
-        <!--View Controller-->
+        <!--Fruits And Veggies Controller-->
         <scene sceneID="tqa-bG-Shy">
             <objects>
-                <viewController id="HWp-fz-PoN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FruitsAndVeggiesController" id="HWp-fz-PoN" customClass="FruitsAndVeggiesController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="buL-uz-iys"/>
                         <viewControllerLayoutGuide type="bottom" id="4JY-MJ-m5A"/>
@@ -1039,7 +1041,61 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afw-u4-d2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7270" y="-1108"/>
+            <point key="canvasLocation" x="7031" y="-1331"/>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="4xO-2T-gaG">
+            <objects>
+                <viewController id="YDn-yh-rcB" customClass="ActivityViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="piT-Xq-Ule"/>
+                        <viewControllerLayoutGuide type="bottom" id="LYV-2p-Y29"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HZz-vz-eg0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Has-3W-NhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7030" y="-585"/>
+        </scene>
+        <!--Drinks View Controller-->
+        <scene sceneID="US3-c4-iw9">
+            <objects>
+                <viewController id="bK4-Lm-UIH" customClass="DrinksViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NDc-ED-qjp"/>
+                        <viewControllerLayoutGuide type="bottom" id="rJf-fR-Sqb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zvn-zg-SVR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vs2-Fj-rjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7900" y="-585"/>
+        </scene>
+        <!--Screen Time View Controller-->
+        <scene sceneID="11G-Qd-kO7">
+            <objects>
+                <viewController id="Yww-Uo-dcg" customClass="ScreenTimeViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VeH-38-Hqa"/>
+                        <viewControllerLayoutGuide type="bottom" id="EQj-gK-VWw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pcT-zq-7Pz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHV-39-kff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7900" y="-1331"/>
         </scene>
         <!--Item-->
         <scene sceneID="SnJ-d2-F8F">

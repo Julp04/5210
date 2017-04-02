@@ -36,6 +36,7 @@ class SignupController: UIViewController {
         super.viewDidLoad()
         addProfileImageButton()
         
+        self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1)
     }
     
     //MARK: UI
