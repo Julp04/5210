@@ -25,6 +25,7 @@ pod 'Firebase/Core'
     pod 'LTMorphingLabel'
     pod 'Pageboy'
 pod 'UICircularProgressRing'
+pod 'Cosmos', '~> 8.0'
 
   # Pods for 5210
 
