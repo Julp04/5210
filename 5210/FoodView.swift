@@ -66,12 +66,38 @@ class FoodView: UIView {
         addSubview(addButton)
     }
     
+   
+    
+    init(frame: CGRect, image: UIImage, name: String) {
+        super.init(frame: frame)
+        backgroundColor = .white
+        
+        
+        self.image = image
+     
+        imageViewHeight = frame.height - kControlsHeight
+        labelWidth = frame.width - 2 * kButtonWidth
+        
+        setupButtons()
+        setupImageView()
+        setupLabelView()
+        
+        self.foodName = name
+        
+        
+        addSubview(imageView)
+        addSubview(minusButton)
+        addSubview(plusButton)
+        addSubview(labelView)
+        addSubview(addButton)
+    }
+    
+    
+    
 
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        
-        backgroundColor = #colorLiteral(red: 0.2823529412, green: 0.6588235294, blue: 0.2588235294, alpha: 1)
     }
     
     private func setupButtons() {
