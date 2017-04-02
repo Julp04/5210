@@ -250,7 +250,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "python \"$PROJECT_DIR/Design/slice.py\" \"$PROJECT_DIR/Design/5210.sketch\" \"$PROJECT_DIR/5210/Assets.xcassets\"";
+			shellScript = "python \"$PROJECT_DIR/Design/slice.py\" \"$PROJECT_DIR/Design/Designs.sketch\" \"$PROJECT_DIR/5210/Assets.xcassets\"";
 		};
 		2513DF2260818C9CBA0DACE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
