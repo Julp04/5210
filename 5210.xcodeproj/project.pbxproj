@@ -26,6 +26,7 @@
 		145621381E914E9200579C7E /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145621371E914E9200579C7E /* ActivityViewController.swift */; };
 		1456213A1E914EB300579C7E /* ScreenTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145621391E914EB300579C7E /* ScreenTimeViewController.swift */; };
 		1456213C1E914F1400579C7E /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456213B1E914F1400579C7E /* DrinksViewController.swift */; };
+		1456213E1E915D6400579C7E /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456213D1E915D6400579C7E /* FoodView.swift */; };
 		D632A688FF8C96FE6664ACE0 /* Pods_5210.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A039013F80174743B40CDD21 /* Pods_5210.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		145621371E914E9200579C7E /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		145621391E914EB300579C7E /* ScreenTimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenTimeViewController.swift; sourceTree = "<group>"; };
 		1456213B1E914F1400579C7E /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
+		1456213D1E915D6400579C7E /* FoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		47EAD9BE9D6726353EFEFF13 /* Pods-5210.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.debug.xcconfig"; sourceTree = "<group>"; };
 		4F86CF89418AF389E8AEDFC0 /* Pods-5210.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.release.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.release.xcconfig"; sourceTree = "<group>"; };
 		A039013F80174743B40CDD21 /* Pods_5210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				140D07EE1E8F280E0091AD62 /* Main.storyboard */,
+				1456213D1E915D6400579C7E /* FoodView.swift */,
 				140D07EA1E8F280E0091AD62 /* AppDelegate.swift */,
 				140D07FC1E8F30A80091AD62 /* GoogleService-Info.plist */,
 				140D08021E8F33500091AD62 /* Controllers */,
@@ -313,6 +316,7 @@
 				145621381E914E9200579C7E /* ActivityViewController.swift in Sources */,
 				145621341E9131BD00579C7E /* Five210NavBar.swift in Sources */,
 				140D08101E8F4FF50091AD62 /* FireClient.swift in Sources */,
+				1456213E1E915D6400579C7E /* FoodView.swift in Sources */,
 				1456213C1E914F1400579C7E /* DrinksViewController.swift in Sources */,
 				145621361E914E7100579C7E /* FruitsAndVeggiesController.swift in Sources */,
 				140D08011E8F33490091AD62 /* BackgroundVideo.swift in Sources */,
