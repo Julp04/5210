@@ -34,6 +34,13 @@ class Five210ViewController: UIViewController {
     
     @IBOutlet weak var oneStarViewTHREE: CosmosView!
     @IBOutlet weak var oneStarViewTWO: CosmosView!
+    
+    var fiveButton: UIButton!
+    var twoButton: UIButton!
+    var oneButton: UIButton!
+    var zeroButton: UIButton!
+    
+    @IBOutlet weak var imageStackView: UIStackView!
     //MARK: Actions
     
     override func viewDidLoad() {
@@ -41,6 +48,7 @@ class Five210ViewController: UIViewController {
         
         setupTabBar()
         setupImageViews()
+        setupButtons()
     }
     
     
@@ -57,7 +65,32 @@ class Five210ViewController: UIViewController {
             imageView?.layer.borderWidth = 0.5
         }
         
+    }
+    
+    func setupButtons() {
+        fiveButton = UIButton(frame: fiveImageView.frame)
+        fiveButton.addTarget(self, action: #selector(Five210ViewController.presentFruitsAndVeggies), for: .touchUpInside)
         
+        
+        twoButton = UIButton(frame: twoImageView.frame)
+        twoButton.addTarget(self, action: #selector(Five210ViewController.presentScreenTime), for: .touchUpInside)
+        
+        oneButton = UIButton(frame: oneImageView.frame)
+        oneButton.addTarget(self, action: #selector(Five210ViewController.presentActivity), for: .touchUpInside)
+        oneButton.frame.origin.y = oneButton.frame.origin.y + oneButton.frame.size.height
+        
+        
+        zeroButton = UIButton(frame: zeroImageView.frame)
+        zeroButton.addTarget(self, action: #selector(Five210ViewController.presentDrinks), for: .touchUpInside)
+        zeroButton.frame.origin.y = zeroButton.frame.origin.y + zeroButton.frame.size.height
+        
+        let buttonsView = UIView(frame: imageStackView.frame)
+        buttonsView.addSubview(fiveButton)
+        buttonsView.addSubview(twoButton)
+        buttonsView.addSubview(oneButton)
+        buttonsView.addSubview(zeroButton)
+        
+        view.addSubview(buttonsView)
         
         
     }
@@ -70,6 +103,47 @@ class Five210ViewController: UIViewController {
         self.navigationController?.tabBarItem.image = tabBarImageGray
         self.navigationController?.tabBarItem.title = "5210"
     }
+    
+    //MARK: Segue
+    
+    func presentFruitsAndVeggies() {
+        print("Fruits and veggies")
+        let 
+        navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+    }
+    
+    func presentScreenTime() {
+        print("Screen time")
+    }
+    
+    func presentActivity() {
+        print("Activity")
+    }
+    
+    func presentDrinks() {
+        print("Drinks")
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
 
 }
