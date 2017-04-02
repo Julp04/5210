@@ -48,7 +48,11 @@ class OnboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1)
         
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1),
+                                                                        NSFontAttributeName : UIFont.systemFont(ofSize: 18.0, weight: UIFontWeightRegular)]
         
         configureScrollView()
         

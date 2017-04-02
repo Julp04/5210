@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '81FC109D8F3556F3C70D6AB5EADDC775'
+               BlueprintIdentifier = '7E4A72E5E6C8E1918E55105441FC3B5A'
                BlueprintName = 'TransitionTreasury'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'TransitionTreasury.framework'>

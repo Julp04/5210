@@ -15,11 +15,12 @@
 		140D07FF1E8F331E0091AD62 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D07FE1E8F331E0091AD62 /* OnboardViewController.swift */; };
 		140D08011E8F33490091AD62 /* BackgroundVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08001E8F33490091AD62 /* BackgroundVideo.swift */; };
 		140D080A1E8F33C60091AD62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08091E8F33C60091AD62 /* LoginViewController.swift */; };
-		140D080C1E8F33DD0091AD62 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D080B1E8F33DD0091AD62 /* SignupViewController.swift */; };
 		140D080E1E8F43CC0091AD62 /* TransparentNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D080D1E8F43CC0091AD62 /* TransparentNavigationBar.swift */; };
 		140D08101E8F4FF50091AD62 /* FireClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D080F1E8F4FF50091AD62 /* FireClient.swift */; };
 		140D08131E8F52410091AD62 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08121E8F52410091AD62 /* HomeViewController.swift */; };
 		140D08151E8F53390091AD62 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08141E8F53390091AD62 /* AlertUtility.swift */; };
+		140D08171E8F58140091AD62 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08161E8F58140091AD62 /* ProfileImageView.swift */; };
+		140D08191E8FD91D0091AD62 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08181E8FD91D0091AD62 /* SignupController.swift */; };
 		D632A688FF8C96FE6664ACE0 /* Pods_5210.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A039013F80174743B40CDD21 /* Pods_5210.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,11 +35,12 @@
 		140D07FE1E8F331E0091AD62 /* OnboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		140D08001E8F33490091AD62 /* BackgroundVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundVideo.swift; sourceTree = "<group>"; };
 		140D08091E8F33C60091AD62 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		140D080B1E8F33DD0091AD62 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		140D080D1E8F43CC0091AD62 /* TransparentNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentNavigationBar.swift; sourceTree = "<group>"; };
 		140D080F1E8F4FF50091AD62 /* FireClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireClient.swift; sourceTree = "<group>"; };
 		140D08121E8F52410091AD62 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		140D08141E8F53390091AD62 /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
+		140D08161E8F58140091AD62 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
+		140D08181E8FD91D0091AD62 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
 		47EAD9BE9D6726353EFEFF13 /* Pods-5210.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.debug.xcconfig"; sourceTree = "<group>"; };
 		4F86CF89418AF389E8AEDFC0 /* Pods-5210.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.release.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.release.xcconfig"; sourceTree = "<group>"; };
 		A039013F80174743B40CDD21 /* Pods_5210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				140D07EE1E8F280E0091AD62 /* Main.storyboard */,
+				140D08181E8FD91D0091AD62 /* SignupController.swift */,
 				140D07EA1E8F280E0091AD62 /* AppDelegate.swift */,
 				140D07FC1E8F30A80091AD62 /* GoogleService-Info.plist */,
 				140D08021E8F33500091AD62 /* Controllers */,
@@ -95,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				140D08121E8F52410091AD62 /* HomeViewController.swift */,
-				140D080B1E8F33DD0091AD62 /* SignupViewController.swift */,
 				140D08091E8F33C60091AD62 /* LoginViewController.swift */,
 				140D07FE1E8F331E0091AD62 /* OnboardViewController.swift */,
 			);
@@ -105,6 +107,7 @@
 		140D08031E8F33570091AD62 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				140D08161E8F58140091AD62 /* ProfileImageView.swift */,
 				140D080D1E8F43CC0091AD62 /* TransparentNavigationBar.swift */,
 				140D08001E8F33490091AD62 /* BackgroundVideo.swift */,
 			);
@@ -283,9 +286,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				140D080C1E8F33DD0091AD62 /* SignupViewController.swift in Sources */,
 				140D07EB1E8F280E0091AD62 /* AppDelegate.swift in Sources */,
+				140D08171E8F58140091AD62 /* ProfileImageView.swift in Sources */,
 				140D080E1E8F43CC0091AD62 /* TransparentNavigationBar.swift in Sources */,
+				140D08191E8FD91D0091AD62 /* SignupController.swift in Sources */,
 				140D08131E8F52410091AD62 /* HomeViewController.swift in Sources */,
 				140D08151E8F53390091AD62 /* AlertUtility.swift in Sources */,
 				140D07FF1E8F331E0091AD62 /* OnboardViewController.swift in Sources */,

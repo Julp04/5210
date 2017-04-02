@@ -99,6 +99,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICircularProgressRing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -108,16 +113,6 @@
 			<true/>
 		</dict>
 		<key>1613271357771814C71601D90B787D94</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>29CFB76B28AEE4AB3B3E6458C95334B2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3253453FE4935BE184E800C78F646C7D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,12 +137,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81FC109D8F3556F3C70D6AB5EADDC775</key>
+		<key>7E4A72E5E6C8E1918E55105441FC3B5A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8B1E460B6834329665D3ACB7FDF31513</key>
+		<key>846CBDD131308874AB287AC44534F5C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>929B0B58936575A62CAA7F471D4E8D69</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,7 +167,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C0FD7E66211C850A68A369820ED7D24F</key>
+		<key>C44FD6863A265F538FF8ADEDF2EBCB14</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C47BBF71CF28F26F5164D0422C294D7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C4F07D41849B91D40804F475CD67D1C4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C6104CD9621C3C8D1D067973BBD6F0AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -177,12 +192,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DCAD8131F3B91DCB90D82D507025DAB2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E3EECBF222E1BE97C8101A3C10A16801</key>
+		<key>DDB73441B6EF58A7C8CFEF0834428384</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -192,7 +202,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FAD15B826FA40ABFDE227E8498AC8118</key>
+		<key>F3286B39586306D77331C5FD8E39F701</key>
 		<dict>
 			<key>primary</key>
 			<true/>

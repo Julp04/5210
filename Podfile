@@ -24,6 +24,7 @@ pod 'Firebase/Core'
     pod 'RAMPaperSwitch', '~> 2.0.4'
     pod 'LTMorphingLabel'
     pod 'Pageboy'
+pod 'UICircularProgressRing'
 
   # Pods for 5210
 

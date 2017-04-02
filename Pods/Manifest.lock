@@ -53,6 +53,7 @@ PODS:
   - TransitionAnimation (4.0.0):
     - TransitionTreasury (~> 4.0)
   - TransitionTreasury (4.0.0)
+  - UICircularProgressRing (1.4.2)
 
 DEPENDENCIES:
   - FCAlertView
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - SkyFloatingLabelTextField (~> 2.0.0)
   - TransitionAnimation
   - TransitionTreasury
+  - UICircularProgressRing
 
 SPEC CHECKSUMS:
   FCAlertView: 083c067bfd98f147abf5a66fe0e31cefac7bc809
@@ -98,7 +100,8 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
   TransitionAnimation: c397b9ca41ab593b35b1e8f8673df17bae0db20a
   TransitionTreasury: dcf3fe6e5c740525d9e7d4544af45e6fbfd71c88
+  UICircularProgressRing: 853758575ad09229a41f20da137faaeae8b2f1b9
 
-PODFILE CHECKSUM: 664fba77180edfb92d6c9cd846d4f7cfdeb43706
+PODFILE CHECKSUM: 0ca2498f7b5f0abc754c5331c03771d5c4823e26
 
 COCOAPODS: 1.2.0
