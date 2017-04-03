@@ -36,7 +36,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYy-mf-Kim">
-                                <rect key="frame" x="-4" y="624" width="191.5" height="43"/>
+                                <rect key="frame" x="-4" y="624" width="192" height="43"/>
                                 <color key="backgroundColor" red="0.0" green="0.59293702411167515" blue="0.15994733973775424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="43" id="sFG-oT-fMc"/>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwT-7N-u5E">
-                                <rect key="frame" x="187.5" y="624" width="191.5" height="43"/>
+                                <rect key="frame" x="188" y="624" width="191" height="43"/>
                                 <color key="backgroundColor" red="0.11685646586799958" green="0.59704801651913386" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <state key="normal" title="SIGN UP">
@@ -1037,18 +1037,8 @@ amounts below…</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PO8-kO-p6N" customClass="FoodView" customModule="_210" customModuleProvider="target">
-                                <rect key="frame" x="98" y="118" width="179" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="apple"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="foodName" value="Apple"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2rM-uM-NSp">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2rM-uM-NSp">
                                 <rect key="frame" x="0.0" y="272" width="375" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Fruits"/>
                                     <segment title="Veggies"/>
@@ -1058,9 +1048,8 @@ amounts below…</string>
                                     <action selector="segmentControlSwitch:" destination="HWp-fz-PoN" eventType="valueChanged" id="x5Y-qr-xaZ"/>
                                 </connections>
                             </segmentedControl>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Lr-T4i">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Lr-T4i">
                                 <rect key="frame" x="0.0" y="301" width="370" height="366"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aBt-yR-lfD">
                                     <size key="itemSize" width="50" height="50"/>
@@ -1089,17 +1078,55 @@ amounts below…</string>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="aiB-SE-Rtk">
+                                <rect key="frame" x="27" y="76" width="332" height="142"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruits_veggies_icon" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-cI-zG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="142"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LdW-87-chJ">
+                                        <rect key="frame" x="155" y="0.0" width="177" height="142"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of servings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St7-Ua-mSW">
+                                                <rect key="frame" x="19" y="0.0" width="139" height="64"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re8-lr-rB2">
+                                                <rect key="frame" x="69" y="64" width="39" height="78"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2rM-uM-NSp" firstAttribute="leading" secondItem="Ydn-JG-5Qa" secondAttribute="leading" id="7bS-LH-uaM"/>
+                            <constraint firstItem="7mh-Lr-T4i" firstAttribute="bottom" secondItem="4JY-MJ-m5A" secondAttribute="top" id="FdW-Yi-CAL"/>
+                            <constraint firstItem="aiB-SE-Rtk" firstAttribute="leading" secondItem="Ydn-JG-5Qa" secondAttribute="leadingMargin" constant="11" id="K52-tC-u54"/>
+                            <constraint firstItem="aiB-SE-Rtk" firstAttribute="top" secondItem="buL-uz-iys" secondAttribute="bottom" constant="56" id="Sl7-ln-p3b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aiB-SE-Rtk" secondAttribute="trailing" id="cMo-MS-N4T"/>
+                            <constraint firstAttribute="trailing" secondItem="2rM-uM-NSp" secondAttribute="trailing" id="cbD-AE-OLC"/>
+                            <constraint firstItem="7mh-Lr-T4i" firstAttribute="top" secondItem="2rM-uM-NSp" secondAttribute="bottom" constant="1" id="cpm-7N-XRz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7mh-Lr-T4i" secondAttribute="trailing" constant="-11" id="noX-RC-EWm"/>
+                            <constraint firstItem="2rM-uM-NSp" firstAttribute="top" secondItem="LdW-87-chJ" secondAttribute="bottom" constant="54" id="qH2-XY-H4X"/>
+                            <constraint firstItem="2rM-uM-NSp" firstAttribute="leading" secondItem="7mh-Lr-T4i" secondAttribute="leading" id="uGp-hu-co8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="7mh-Lr-T4i" id="IWR-zx-XWL"/>
+                        <outlet property="numberOfServingsLabel" destination="Re8-lr-rB2" id="S0X-yh-B7v"/>
                         <outlet property="segmentControl" destination="2rM-uM-NSp" id="ohh-kB-yoR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afw-u4-d2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7029.5" y="-1332.5"/>
+            <point key="canvasLocation" x="7028" y="-1332.6836581709147"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="4xO-2T-gaG">
@@ -1237,7 +1264,7 @@ amounts below…</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N90-q1-AcX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1275,7 +1302,7 @@ amounts below…</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1g-sd-pbi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="Smoke.png" selectedImage="ic_5210" id="2g1-uf-6lk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1298,6 +1325,7 @@ amounts below…</string>
         <image name="avatar" width="120" height="95"/>
         <image name="boygirlsport" width="277" height="210"/>
         <image name="five_fruits" width="152" height="143"/>
+        <image name="fruits_veggies_icon" width="119" height="142"/>
         <image name="ic_5210" width="41" height="20"/>
         <image name="letsmove" width="317" height="102"/>
     </resources>

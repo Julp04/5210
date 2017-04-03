@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol ServingsDelegate: class {
+    func countChanged()
+}
+
 @IBDesignable
 class FoodView: UIView {
     
@@ -16,6 +20,8 @@ class FoodView: UIView {
     let kControlsHeight: CGFloat = 30
     let kButtonWidth: CGFloat = 46
     let kNameLabelHeight: CGFloat = 21
+    weak var delegate: ServingsDelegate?
+    
     
     @IBInspectable var image: UIImage? {
         didSet {
@@ -41,15 +47,20 @@ class FoodView: UIView {
     private var imageViewHeight: CGFloat!
     private var labelWidth: CGFloat!
     
+    var food: Food!
+    
     var count: Int = 0 {
         didSet {
             addButton.isHidden = count > 0
             countLabel.text = String(count)
+            delegate?.countChanged()
         }
     }
     
 
     required init?(coder aDecoder: NSCoder) {
+        
+        
         super.init(coder: aDecoder)
         
         imageViewHeight = frame.height - kControlsHeight
@@ -68,12 +79,13 @@ class FoodView: UIView {
     
    
     
-    init(frame: CGRect, image: UIImage, name: String) {
+    init(frame: CGRect, food: Food) {
+        self.food = food
         super.init(frame: frame)
         backgroundColor = .white
         
-        
-        self.image = image
+        self.image = food.image
+        self.foodName = food.name
      
         imageViewHeight = frame.height - kControlsHeight
         labelWidth = frame.width - 2 * kButtonWidth
@@ -82,7 +94,6 @@ class FoodView: UIView {
         setupImageView()
         setupLabelView()
         
-        self.foodName = name
         
         
         addSubview(imageView)
@@ -117,7 +128,7 @@ class FoodView: UIView {
         
         addButton = UIButton(frame:CGRect(x: 0, y: imageViewHeight, width: frame.width, height: kControlsHeight))
         addButton.setTitle("+ Add", for: .normal)
-        addButton.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
+        addButton.backgroundColor = #colorLiteral(red: 0.934858501, green: 0.2402378321, blue: 0.2590747476, alpha: 1)
         addButton.addTarget(self, action: #selector(FoodView.incrementCount), for: .touchUpInside)
     }
     
@@ -145,6 +156,7 @@ class FoodView: UIView {
     }
     
     internal func incrementCount() {
+        food.numberOfServings += 1
         count += 1
     }
     
@@ -152,8 +164,9 @@ class FoodView: UIView {
         guard count >= 0 else {
             return
         }
-        
+        food.numberOfServings -= 1
         count -= 1
+        
     }
 
 

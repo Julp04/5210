@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class Food {
+class FoodModel{
     
     
     private var fruitImages = [#imageLiteral(resourceName: "apple"), #imageLiteral(resourceName: "banana"), #imageLiteral(resourceName: "orange"), #imageLiteral(resourceName: "grapes"), #imageLiteral(resourceName: "kiwi"), #imageLiteral(resourceName: "peach"), #imageLiteral(resourceName: "watermelon"), #imageLiteral(resourceName: "blueberries"),#imageLiteral(resourceName: "avocado"), #imageLiteral(resourceName: "pineapple"), #imageLiteral(resourceName: "plum"), #imageLiteral(resourceName: "Pear"), #imageLiteral(resourceName: "mango"), #imageLiteral(resourceName: "strawberry"), #imageLiteral(resourceName: "blackberries"), #imageLiteral(resourceName: "cranberries")]
@@ -21,8 +21,10 @@ class Food {
     
     private var veggieNames = ["Leafy Greens", "Artichoke", "Asparagues", "Mushroom", "Beet", "Broccoli", "Squash","Cabbage", "Lettuce", "Peas", "Snap Peas", "Onion", "Peppers", "Cauliflower", "Corn", "Carrot", "Spinnach", "Tomato", "Potato", "Zuccini", "Cucumber"]
     
-    var veggies = [FoodView]()
-    var fruits = [FoodView]()
+    
+    var fruitsView = [FoodView]()
+    var veggiesView = [FoodView]()
+    
     
     
     func numberOfFruits() -> Int {
@@ -34,19 +36,33 @@ class Food {
     }
     
     func nameOfFruitAt(indexPath: IndexPath)  -> String{
-        return fruits[indexPath.row].foodName!
+        return fruitsView[indexPath.row].food.name
     }
     
     func nameOfVeggieAt(indexPath: IndexPath) -> String {
-        return veggies[indexPath.row].foodName!
+        return veggiesView[indexPath.row].food.name
     }
     
     func imageOfFruitAt(indexPath: IndexPath) -> UIImage {
-        return fruits[indexPath.row].image!
+        return fruitsView[indexPath.row].food.image
     }
     
     func imageOfVeggieAt(indexPath: IndexPath) -> UIImage {
-        return veggies[indexPath.row].image!
+        return veggiesView[indexPath.row].food.image
+    }
+    
+    func totalNumberOfServings() -> Int {
+            var totalServings: Int = 0
+            
+        for view in veggiesView {
+            totalServings += view.food.numberOfServings
+        }
+            
+        for view in fruitsView {
+            totalServings += view.food.numberOfServings
+        }
+            
+        return totalServings
     }
     
     init() {
@@ -54,25 +70,54 @@ class Food {
             let image = fruitImages[i]
             let name = fruitNames[i]
             
-            let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), image: image, name: name)
-            fruits.append(foodView)
+            let fruit = Food(name: name, image: image)
+  
+            let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: fruit)
+            
+             fruitsView.append(foodView)
         }
+        
+     
+       
         
         for i in 0 ..< veggieNames.count {
             let image = veggieImages[i]
             let name = veggieNames[i]
             
-            let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), image: image, name: name)
-            veggies.append(foodView)
+            let veggie = Food(name: name, image: image)
             
-        }
+
+            let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: veggie)
+            
+            veggiesView.append(foodView)
+            }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+class Food {
+    
+    var name: String
+    var image: UIImage
+    
+    var numberOfServings: Int = 0
+    
+    init(name: String, image: UIImage) {
+        self.image = image
+        self.name = name
     }
     
     
-    
-    
-    
-    
-    
-    
 }
+
+
+
+
