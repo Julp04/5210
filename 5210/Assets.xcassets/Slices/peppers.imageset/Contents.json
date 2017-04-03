@@ -1,1 +1,22 @@
-{"images": [{"idiom": "universal", "scale": "1x", "filename": "peppers.png"}, {"idiom": "universal", "scale": "2x", "filename": "peppers@2x.png"}], "info": {"version": "1", "author": "Slicer"}}
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "peppers.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "peppers@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

@@ -91,6 +91,7 @@ class FoodView: UIView {
         
         self.image = food.image
         self.foodName = food.name
+        
      
         imageViewHeight = frame.height - kControlsHeight
         labelWidth = frame.width - 2 * kButtonWidth
@@ -106,6 +107,10 @@ class FoodView: UIView {
         addSubview(plusButton)
         addSubview(labelView)
         addSubview(addButton)
+        addSubview(nameLabel)
+        bringSubview(toFront: nameLabel)
+        
+       
     }
     
     
@@ -149,9 +154,8 @@ class FoodView: UIView {
         
         nameLabel = UILabel(frame: CGRect(x: 20 + labelWidth / 2.0, y: imageViewHeight - kNameLabelHeight, width: frame.width, height: kNameLabelHeight))
         nameLabel.contentMode = .center
-        
-        
-        addSubview(nameLabel)
+        nameLabel.text = self.foodName
+    
     }
     
     private func setupImageView() {

@@ -2,12 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "beet.png",
+      "filename" : "laptop.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "beet@2x.png",
       "scale" : "2x"
     },
     {
