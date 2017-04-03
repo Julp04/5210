@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol ServingsDelegate: class {
     func countChanged()
@@ -14,6 +15,10 @@ protocol ServingsDelegate: class {
 
 @IBDesignable
 class FoodView: UIView {
+    
+    var player: AVAudioPlayer?
+    
+   
     
     //MARK: Constants
     
@@ -158,6 +163,8 @@ class FoodView: UIView {
     internal func incrementCount() {
         food.numberOfServings += 1
         count += 1
+        
+        playSound()
     }
     
     internal func decrementCount() {
@@ -168,6 +175,28 @@ class FoodView: UIView {
         count -= 1
         
     }
+    
+    func playSound() {
+        
+        let foodName = food.name.removingWhitespaces().lowercased()
+        let url = Bundle.main.url(forResource: "\(foodName)", withExtension: "wav")!
+        
+        do {
+            player = try AVAudioPlayer(contentsOf: url)
+            guard let player = player else { return }
+            
+            player.prepareToPlay()
+            player.play()
+        } catch let error {
+            print(error.localizedDescription)
+        }
+    }
 
 
+}
+
+extension String {
+    func removingWhitespaces() -> String {
+        return components(separatedBy: .whitespaces).joined()
+    }
 }

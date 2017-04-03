@@ -28,6 +28,44 @@
 		1456213C1E914F1400579C7E /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456213B1E914F1400579C7E /* DrinksViewController.swift */; };
 		1456213E1E915D6400579C7E /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456213D1E915D6400579C7E /* FoodView.swift */; };
 		145621401E91B06300579C7E /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1456213F1E91B06300579C7E /* FoodModel.swift */; };
+		148306B21E9299EB00C03FEB /* apple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483068C1E9299EB00C03FEB /* apple.wav */; };
+		148306B31E9299EB00C03FEB /* artichoke.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483068D1E9299EB00C03FEB /* artichoke.wav */; };
+		148306B41E9299EB00C03FEB /* asparagus.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483068E1E9299EB00C03FEB /* asparagus.wav */; };
+		148306B51E9299EB00C03FEB /* avocado.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483068F1E9299EB00C03FEB /* avocado.wav */; };
+		148306B61E9299EB00C03FEB /* banana.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306901E9299EB00C03FEB /* banana.wav */; };
+		148306B71E9299EB00C03FEB /* beet.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306911E9299EB00C03FEB /* beet.wav */; };
+		148306B81E9299EB00C03FEB /* blackberries.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306921E9299EB00C03FEB /* blackberries.wav */; };
+		148306B91E9299EB00C03FEB /* blueberries.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306931E9299EB00C03FEB /* blueberries.wav */; };
+		148306BA1E9299EB00C03FEB /* broccoli.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306941E9299EB00C03FEB /* broccoli.wav */; };
+		148306BB1E9299EB00C03FEB /* butternutsquash.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306951E9299EB00C03FEB /* butternutsquash.wav */; };
+		148306BC1E9299EB00C03FEB /* cabbage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306961E9299EB00C03FEB /* cabbage.wav */; };
+		148306BD1E9299EB00C03FEB /* carrot.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306971E9299EB00C03FEB /* carrot.wav */; };
+		148306BE1E9299EB00C03FEB /* cauliflower.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306981E9299EB00C03FEB /* cauliflower.wav */; };
+		148306BF1E9299EB00C03FEB /* corn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306991E9299EB00C03FEB /* corn.wav */; };
+		148306C01E9299EB00C03FEB /* cranberries.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069A1E9299EB00C03FEB /* cranberries.wav */; };
+		148306C11E9299EB00C03FEB /* cucumber.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069B1E9299EB00C03FEB /* cucumber.wav */; };
+		148306C21E9299EB00C03FEB /* grapefruit.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069C1E9299EB00C03FEB /* grapefruit.wav */; };
+		148306C31E9299EB00C03FEB /* grapes.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069D1E9299EB00C03FEB /* grapes.wav */; };
+		148306C41E9299EB00C03FEB /* kiwi.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069E1E9299EB00C03FEB /* kiwi.wav */; };
+		148306C51E9299EB00C03FEB /* leafygreens.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1483069F1E9299EB00C03FEB /* leafygreens.wav */; };
+		148306C61E9299EB00C03FEB /* lettuce.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A01E9299EB00C03FEB /* lettuce.wav */; };
+		148306C71E9299EB00C03FEB /* mango.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A11E9299EB00C03FEB /* mango.wav */; };
+		148306C81E9299EB00C03FEB /* mushroom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A21E9299EB00C03FEB /* mushroom.wav */; };
+		148306C91E9299EB00C03FEB /* onion.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A31E9299EB00C03FEB /* onion.wav */; };
+		148306CA1E9299EB00C03FEB /* orange.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A41E9299EB00C03FEB /* orange.wav */; };
+		148306CB1E9299EB00C03FEB /* peach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A51E9299EB00C03FEB /* peach.wav */; };
+		148306CC1E9299EB00C03FEB /* pear.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A61E9299EB00C03FEB /* pear.wav */; };
+		148306CD1E9299EB00C03FEB /* peas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A71E9299EB00C03FEB /* peas.wav */; };
+		148306CE1E9299EB00C03FEB /* peppers.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A81E9299EB00C03FEB /* peppers.wav */; };
+		148306CF1E9299EB00C03FEB /* pineapple.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306A91E9299EB00C03FEB /* pineapple.wav */; };
+		148306D01E9299EB00C03FEB /* plum.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AA1E9299EB00C03FEB /* plum.wav */; };
+		148306D11E9299EB00C03FEB /* potato.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AB1E9299EB00C03FEB /* potato.wav */; };
+		148306D21E9299EB00C03FEB /* snappeas.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AC1E9299EB00C03FEB /* snappeas.wav */; };
+		148306D31E9299EB00C03FEB /* spinach.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AD1E9299EB00C03FEB /* spinach.wav */; };
+		148306D41E9299EB00C03FEB /* strawberry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AE1E9299EB00C03FEB /* strawberry.wav */; };
+		148306D51E9299EB00C03FEB /* tomato.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306AF1E9299EB00C03FEB /* tomato.wav */; };
+		148306D61E9299EB00C03FEB /* watermelon.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306B01E9299EB00C03FEB /* watermelon.wav */; };
+		148306D71E9299EB00C03FEB /* zucchini.wav in Resources */ = {isa = PBXBuildFile; fileRef = 148306B11E9299EB00C03FEB /* zucchini.wav */; };
 		D632A688FF8C96FE6664ACE0 /* Pods_5210.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A039013F80174743B40CDD21 /* Pods_5210.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +93,44 @@
 		1456213B1E914F1400579C7E /* DrinksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
 		1456213D1E915D6400579C7E /* FoodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		1456213F1E91B06300579C7E /* FoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodModel.swift; sourceTree = "<group>"; };
+		1483068C1E9299EB00C03FEB /* apple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = apple.wav; sourceTree = "<group>"; };
+		1483068D1E9299EB00C03FEB /* artichoke.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = artichoke.wav; sourceTree = "<group>"; };
+		1483068E1E9299EB00C03FEB /* asparagus.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = asparagus.wav; sourceTree = "<group>"; };
+		1483068F1E9299EB00C03FEB /* avocado.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = avocado.wav; sourceTree = "<group>"; };
+		148306901E9299EB00C03FEB /* banana.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = banana.wav; sourceTree = "<group>"; };
+		148306911E9299EB00C03FEB /* beet.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = beet.wav; sourceTree = "<group>"; };
+		148306921E9299EB00C03FEB /* blackberries.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blackberries.wav; sourceTree = "<group>"; };
+		148306931E9299EB00C03FEB /* blueberries.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = blueberries.wav; sourceTree = "<group>"; };
+		148306941E9299EB00C03FEB /* broccoli.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = broccoli.wav; sourceTree = "<group>"; };
+		148306951E9299EB00C03FEB /* butternutsquash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = butternutsquash.wav; sourceTree = "<group>"; };
+		148306961E9299EB00C03FEB /* cabbage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cabbage.wav; sourceTree = "<group>"; };
+		148306971E9299EB00C03FEB /* carrot.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = carrot.wav; sourceTree = "<group>"; };
+		148306981E9299EB00C03FEB /* cauliflower.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cauliflower.wav; sourceTree = "<group>"; };
+		148306991E9299EB00C03FEB /* corn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = corn.wav; sourceTree = "<group>"; };
+		1483069A1E9299EB00C03FEB /* cranberries.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cranberries.wav; sourceTree = "<group>"; };
+		1483069B1E9299EB00C03FEB /* cucumber.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cucumber.wav; sourceTree = "<group>"; };
+		1483069C1E9299EB00C03FEB /* grapefruit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = grapefruit.wav; sourceTree = "<group>"; };
+		1483069D1E9299EB00C03FEB /* grapes.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = grapes.wav; sourceTree = "<group>"; };
+		1483069E1E9299EB00C03FEB /* kiwi.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = kiwi.wav; sourceTree = "<group>"; };
+		1483069F1E9299EB00C03FEB /* leafygreens.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = leafygreens.wav; sourceTree = "<group>"; };
+		148306A01E9299EB00C03FEB /* lettuce.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lettuce.wav; sourceTree = "<group>"; };
+		148306A11E9299EB00C03FEB /* mango.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mango.wav; sourceTree = "<group>"; };
+		148306A21E9299EB00C03FEB /* mushroom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = mushroom.wav; sourceTree = "<group>"; };
+		148306A31E9299EB00C03FEB /* onion.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = onion.wav; sourceTree = "<group>"; };
+		148306A41E9299EB00C03FEB /* orange.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = orange.wav; sourceTree = "<group>"; };
+		148306A51E9299EB00C03FEB /* peach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = peach.wav; sourceTree = "<group>"; };
+		148306A61E9299EB00C03FEB /* pear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pear.wav; sourceTree = "<group>"; };
+		148306A71E9299EB00C03FEB /* peas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = peas.wav; sourceTree = "<group>"; };
+		148306A81E9299EB00C03FEB /* peppers.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = peppers.wav; sourceTree = "<group>"; };
+		148306A91E9299EB00C03FEB /* pineapple.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pineapple.wav; sourceTree = "<group>"; };
+		148306AA1E9299EB00C03FEB /* plum.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = plum.wav; sourceTree = "<group>"; };
+		148306AB1E9299EB00C03FEB /* potato.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = potato.wav; sourceTree = "<group>"; };
+		148306AC1E9299EB00C03FEB /* snappeas.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = snappeas.wav; sourceTree = "<group>"; };
+		148306AD1E9299EB00C03FEB /* spinach.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = spinach.wav; sourceTree = "<group>"; };
+		148306AE1E9299EB00C03FEB /* strawberry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = strawberry.wav; sourceTree = "<group>"; };
+		148306AF1E9299EB00C03FEB /* tomato.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tomato.wav; sourceTree = "<group>"; };
+		148306B01E9299EB00C03FEB /* watermelon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = watermelon.wav; sourceTree = "<group>"; };
+		148306B11E9299EB00C03FEB /* zucchini.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = zucchini.wav; sourceTree = "<group>"; };
 		47EAD9BE9D6726353EFEFF13 /* Pods-5210.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.debug.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.debug.xcconfig"; sourceTree = "<group>"; };
 		4F86CF89418AF389E8AEDFC0 /* Pods-5210.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-5210.release.xcconfig"; path = "Pods/Target Support Files/Pods-5210/Pods-5210.release.xcconfig"; sourceTree = "<group>"; };
 		A039013F80174743B40CDD21 /* Pods_5210.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_5210.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +177,44 @@
 				140D08041E8F33630091AD62 /* Utility */,
 				140D08031E8F33570091AD62 /* Views */,
 				140D07F11E8F280E0091AD62 /* Assets.xcassets */,
+				1483068C1E9299EB00C03FEB /* apple.wav */,
+				1483068D1E9299EB00C03FEB /* artichoke.wav */,
+				1483068E1E9299EB00C03FEB /* asparagus.wav */,
+				1483068F1E9299EB00C03FEB /* avocado.wav */,
+				148306901E9299EB00C03FEB /* banana.wav */,
+				148306911E9299EB00C03FEB /* beet.wav */,
+				148306921E9299EB00C03FEB /* blackberries.wav */,
+				148306931E9299EB00C03FEB /* blueberries.wav */,
+				148306941E9299EB00C03FEB /* broccoli.wav */,
+				148306951E9299EB00C03FEB /* butternutsquash.wav */,
+				148306961E9299EB00C03FEB /* cabbage.wav */,
+				148306971E9299EB00C03FEB /* carrot.wav */,
+				148306981E9299EB00C03FEB /* cauliflower.wav */,
+				148306991E9299EB00C03FEB /* corn.wav */,
+				1483069A1E9299EB00C03FEB /* cranberries.wav */,
+				1483069B1E9299EB00C03FEB /* cucumber.wav */,
+				1483069C1E9299EB00C03FEB /* grapefruit.wav */,
+				1483069D1E9299EB00C03FEB /* grapes.wav */,
+				1483069E1E9299EB00C03FEB /* kiwi.wav */,
+				1483069F1E9299EB00C03FEB /* leafygreens.wav */,
+				148306A01E9299EB00C03FEB /* lettuce.wav */,
+				148306A11E9299EB00C03FEB /* mango.wav */,
+				148306A21E9299EB00C03FEB /* mushroom.wav */,
+				148306A31E9299EB00C03FEB /* onion.wav */,
+				148306A41E9299EB00C03FEB /* orange.wav */,
+				148306A51E9299EB00C03FEB /* peach.wav */,
+				148306A61E9299EB00C03FEB /* pear.wav */,
+				148306A71E9299EB00C03FEB /* peas.wav */,
+				148306A81E9299EB00C03FEB /* peppers.wav */,
+				148306A91E9299EB00C03FEB /* pineapple.wav */,
+				148306AA1E9299EB00C03FEB /* plum.wav */,
+				148306AB1E9299EB00C03FEB /* potato.wav */,
+				148306AC1E9299EB00C03FEB /* snappeas.wav */,
+				148306AD1E9299EB00C03FEB /* spinach.wav */,
+				148306AE1E9299EB00C03FEB /* strawberry.wav */,
+				148306AF1E9299EB00C03FEB /* tomato.wav */,
+				148306B01E9299EB00C03FEB /* watermelon.wav */,
+				148306B11E9299EB00C03FEB /* zucchini.wav */,
 				140D07F31E8F280E0091AD62 /* LaunchScreen.storyboard */,
 				140D07F61E8F280E0091AD62 /* Info.plist */,
 			);
@@ -232,10 +346,48 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				148306C91E9299EB00C03FEB /* onion.wav in Resources */,
+				148306D21E9299EB00C03FEB /* snappeas.wav in Resources */,
+				148306CF1E9299EB00C03FEB /* pineapple.wav in Resources */,
+				148306C21E9299EB00C03FEB /* grapefruit.wav in Resources */,
+				148306CB1E9299EB00C03FEB /* peach.wav in Resources */,
+				148306B71E9299EB00C03FEB /* beet.wav in Resources */,
+				148306BD1E9299EB00C03FEB /* carrot.wav in Resources */,
+				148306B61E9299EB00C03FEB /* banana.wav in Resources */,
+				148306B21E9299EB00C03FEB /* apple.wav in Resources */,
+				148306C71E9299EB00C03FEB /* mango.wav in Resources */,
+				148306D51E9299EB00C03FEB /* tomato.wav in Resources */,
+				148306BB1E9299EB00C03FEB /* butternutsquash.wav in Resources */,
+				148306BA1E9299EB00C03FEB /* broccoli.wav in Resources */,
+				148306CC1E9299EB00C03FEB /* pear.wav in Resources */,
+				148306BF1E9299EB00C03FEB /* corn.wav in Resources */,
+				148306D11E9299EB00C03FEB /* potato.wav in Resources */,
 				140D07F51E8F280E0091AD62 /* LaunchScreen.storyboard in Resources */,
+				148306CD1E9299EB00C03FEB /* peas.wav in Resources */,
 				140D07FD1E8F30A80091AD62 /* GoogleService-Info.plist in Resources */,
+				148306B41E9299EB00C03FEB /* asparagus.wav in Resources */,
+				148306B51E9299EB00C03FEB /* avocado.wav in Resources */,
+				148306B31E9299EB00C03FEB /* artichoke.wav in Resources */,
+				148306B81E9299EB00C03FEB /* blackberries.wav in Resources */,
+				148306BE1E9299EB00C03FEB /* cauliflower.wav in Resources */,
+				148306CA1E9299EB00C03FEB /* orange.wav in Resources */,
+				148306D71E9299EB00C03FEB /* zucchini.wav in Resources */,
+				148306C11E9299EB00C03FEB /* cucumber.wav in Resources */,
+				148306D31E9299EB00C03FEB /* spinach.wav in Resources */,
+				148306C51E9299EB00C03FEB /* leafygreens.wav in Resources */,
+				148306C31E9299EB00C03FEB /* grapes.wav in Resources */,
+				148306D01E9299EB00C03FEB /* plum.wav in Resources */,
+				148306CE1E9299EB00C03FEB /* peppers.wav in Resources */,
+				148306C41E9299EB00C03FEB /* kiwi.wav in Resources */,
+				148306BC1E9299EB00C03FEB /* cabbage.wav in Resources */,
 				140D07F21E8F280E0091AD62 /* Assets.xcassets in Resources */,
+				148306D41E9299EB00C03FEB /* strawberry.wav in Resources */,
 				140D07F01E8F280E0091AD62 /* Main.storyboard in Resources */,
+				148306C01E9299EB00C03FEB /* cranberries.wav in Resources */,
+				148306B91E9299EB00C03FEB /* blueberries.wav in Resources */,
+				148306C61E9299EB00C03FEB /* lettuce.wav in Resources */,
+				148306D61E9299EB00C03FEB /* watermelon.wav in Resources */,
+				148306C81E9299EB00C03FEB /* mushroom.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

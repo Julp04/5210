@@ -19,7 +19,7 @@ class FoodModel{
     private var veggieImages = [#imageLiteral(resourceName: "leafy greens"), #imageLiteral(resourceName: "artichoke"), #imageLiteral(resourceName: "asparagus"), #imageLiteral(resourceName: "mushroom"), #imageLiteral(resourceName: "beet"), #imageLiteral(resourceName: "broccoli"), #imageLiteral(resourceName: "butternut squash"), #imageLiteral(resourceName: "cabbage"), #imageLiteral(resourceName: "lettuce"), #imageLiteral(resourceName: "peas"), #imageLiteral(resourceName: "snap peas"), #imageLiteral(resourceName: "onion"), #imageLiteral(resourceName: "peppers"), #imageLiteral(resourceName: "cauliflower"), #imageLiteral(resourceName: "corn"), #imageLiteral(resourceName: "carrot"), #imageLiteral(resourceName: "spinach"), #imageLiteral(resourceName: "tomato"), #imageLiteral(resourceName: "potato"), #imageLiteral(resourceName: "zuccini"), #imageLiteral(resourceName: "cucumber")]
     
     
-    private var veggieNames = ["Leafy Greens", "Artichoke", "Asparagues", "Mushroom", "Beet", "Broccoli", "Squash","Cabbage", "Lettuce", "Peas", "Snap Peas", "Onion", "Peppers", "Cauliflower", "Corn", "Carrot", "Spinnach", "Tomato", "Potato", "Zuccini", "Cucumber"]
+    private var veggieNames = ["Leafy Greens", "Artichoke", "Asparagus", "Mushroom", "Beet", "Broccoli", "Butternut Squash","Cabbage", "Lettuce", "Peas", "Snap Peas", "Onion", "Peppers", "Cauliflower", "Corn", "Carrot", "Spinach", "Tomato", "Potato", "Zucchini", "Cucumber"]
     
     
     var fruitsView = [FoodView]()
@@ -77,8 +77,6 @@ class FoodModel{
              fruitsView.append(foodView)
         }
         
-     
-       
         
         for i in 0 ..< veggieNames.count {
             let image = veggieImages[i]
@@ -93,15 +91,6 @@ class FoodModel{
             }
     }
 }
-
-
-
-
-
-
-
-
-
 
 class Food {
     
