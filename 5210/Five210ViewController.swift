@@ -44,6 +44,8 @@ class Five210ViewController: UIViewController {
     
     var allStars: [CosmosView]!
     
+    var type: TrackingType!
+    
    
 
     
@@ -161,26 +163,39 @@ class Five210ViewController: UIViewController {
     //MARK: Segue
     
     func presentFruitsAndVeggies() {
+        self.type = .FruitsAndVeggies
         print("Fruits and veggies")
         let fruitsAndVeggiesController = self.storyboard?.instantiateViewController(withIdentifier: "FruitsAndVeggiesController") as! FruitsAndVeggiesController
+        fruitsAndVeggiesController.configureViewController(type: self.type)
+
         navigationController?.pushViewController(fruitsAndVeggiesController, animated: true)
     }
     
     func presentScreenTime() {
+        self.type = .ScreenTime
+        let fruitsAndVeggiesController = self.storyboard?.instantiateViewController(withIdentifier: "FruitsAndVeggiesController") as! FruitsAndVeggiesController
+        fruitsAndVeggiesController.configureViewController(type: self.type)
+        navigationController?.pushViewController(fruitsAndVeggiesController, animated: true)
         print("Screen time")
     }
     
     func presentActivity() {
+        self.type = .Activity
+        let fruitsAndVeggiesController = self.storyboard?.instantiateViewController(withIdentifier: "FruitsAndVeggiesController") as! FruitsAndVeggiesController
+        fruitsAndVeggiesController.configureViewController(type: self.type)
+        navigationController?.pushViewController(fruitsAndVeggiesController, animated: true)
         print("Activity")
     }
     
     func presentDrinks() {
+        self.type = .Drinks
+        let fruitsAndVeggiesController = self.storyboard?.instantiateViewController(withIdentifier: "FruitsAndVeggiesController") as! FruitsAndVeggiesController
+        fruitsAndVeggiesController.configureViewController(type: self.type)
+        navigationController?.pushViewController(fruitsAndVeggiesController, animated: true)
         print("Drinks")
     }
     
-    
-    
-    
+
     
     
     

@@ -183,16 +183,16 @@ class FoodView: UIView {
     func playSound() {
         
         let foodName = food.name.removingWhitespaces().lowercased()
-        let url = Bundle.main.url(forResource: "\(foodName)", withExtension: "wav")!
-        
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            guard let player = player else { return }
-            
-            player.prepareToPlay()
-            player.play()
-        } catch let error {
-            print(error.localizedDescription)
+        if let url = Bundle.main.url(forResource: "\(foodName)", withExtension: "wav") {
+            do {
+                player = try AVAudioPlayer(contentsOf: url)
+                guard let player = player else { return }
+                
+                player.prepareToPlay()
+                player.play()
+            } catch let error {
+                print(error.localizedDescription)
+            }
         }
     }
 

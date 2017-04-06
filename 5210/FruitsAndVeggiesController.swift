@@ -9,6 +9,14 @@
 import UIKit
 
 
+public enum TrackingType {
+    case FruitsAndVeggies
+    case ScreenTime
+    case Drinks
+    case Activity
+}
+
+
 class FruitsAndVeggiesController: UIViewController {
     
     //MARK: Constants
@@ -20,11 +28,15 @@ class FruitsAndVeggiesController: UIViewController {
     
     fileprivate let itemsPerRow: CGFloat = 3
     
-    var foodModel = FoodModel()
+    var foodModel: FoodModel!
     
     var foodView: FoodView!
     weak var delegate: ServingsDelegate?
     
+    @IBOutlet weak var titleLabel: UILabel!
+    var type: TrackingType = .FruitsAndVeggies
+    
+    @IBOutlet weak var titleImageView: UIImageView!
 
     
     //MARK: Outlets
@@ -43,7 +55,29 @@ class FruitsAndVeggiesController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         delegate = self
+        
+        
+        switch self.type {
+        case .FruitsAndVeggies:
+            self.segmentControl.isHidden = false
+            titleLabel.text = "Number of servings:"
+        case .ScreenTime:
+            self.segmentControl.isHidden = true
+            titleLabel.text = "Screen time hours"
+        case .Activity:
+            self.segmentControl.isHidden = true
+            titleLabel.text = "Activity hours"
+        case .Drinks:
+            titleLabel.text = "Number of sugary drinks"
+            self.segmentControl.isHidden = false
+        }
+      
+        foodModel = FoodModel(forType: self.type)
     
+    }
+    
+    func configureViewController(type: TrackingType) {
+        self.type = type
     }
     
     
@@ -94,14 +128,25 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
+        
+        
+        switch self.type {
+        case .FruitsAndVeggies:
+            switch segmentControl.selectedSegmentIndex {
+            case 0:
+                return foodModel.numberOfFruits()
+            case 1:
+                return foodModel.numberOfVegetables()
+            default:
+                return 0
+            }
+        case .ScreenTime:
             return foodModel.numberOfFruits()
-        case 1:
-            return foodModel.numberOfVegetables()
-        default:
-            return 0
+            
+        case .Activity: break
+        case .Drinks: break
         }
+        return foodModel.numberOfFruits()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -110,15 +155,21 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
         cell.backgroundColor = .red
         
         
-        
-        switch segmentControl.selectedSegmentIndex {
-        case 0:
-            foodView = foodModel.fruitsView[indexPath.row]
-        case 1:
-            foodView = foodModel.veggiesView[indexPath.row]
+        switch self.type {
+        case .FruitsAndVeggies:
+            switch segmentControl.selectedSegmentIndex {
+            case 0:
+                foodView = foodModel.fruitsView[indexPath.row]
+            case 1:
+                foodView = foodModel.veggiesView[indexPath.row]
+            default:
+                break
+            }
         default:
-            break
+            foodView = foodModel.fruitsView[indexPath.row]
         }
+        
+    
         
         foodView.delegate = self
         

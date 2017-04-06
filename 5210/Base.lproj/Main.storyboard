@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N90-q1-AcX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vtV-Xd-wTd">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -1258,6 +1258,8 @@ amounts below…</string>
                         <outlet property="collectionView" destination="7mh-Lr-T4i" id="IWR-zx-XWL"/>
                         <outlet property="numberOfServingsLabel" destination="Re8-lr-rB2" id="S0X-yh-B7v"/>
                         <outlet property="segmentControl" destination="2rM-uM-NSp" id="ohh-kB-yoR"/>
+                        <outlet property="titleImageView" destination="TQS-cI-zG9" id="BkY-kL-GIu"/>
+                        <outlet property="titleLabel" destination="St7-Ua-mSW" id="Yc7-rI-OCL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afw-u4-d2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1400,7 +1402,7 @@ amounts below…</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N90-q1-AcX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1438,7 +1440,7 @@ amounts below…</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1g-sd-pbi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="Smoke.png" selectedImage="ic_5210" id="2g1-uf-6lk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
