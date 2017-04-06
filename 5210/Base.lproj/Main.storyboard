@@ -1174,7 +1174,7 @@ amounts below…</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="2rM-uM-NSp">
-                                <rect key="frame" x="0.0" y="272" width="375" height="29"/>
+                                <rect key="frame" x="0.0" y="277" width="375" height="29"/>
                                 <segments>
                                     <segment title="Fruits"/>
                                     <segment title="Veggies"/>
@@ -1185,7 +1185,7 @@ amounts below…</string>
                                 </connections>
                             </segmentedControl>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7mh-Lr-T4i">
-                                <rect key="frame" x="0.0" y="301" width="370" height="366"/>
+                                <rect key="frame" x="0.0" y="306" width="370" height="361"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="aBt-yR-lfD">
                                     <size key="itemSize" width="50" height="50"/>
@@ -1215,22 +1215,22 @@ amounts below…</string>
                                 </cells>
                             </collectionView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="aiB-SE-Rtk">
-                                <rect key="frame" x="27" y="76" width="332" height="142"/>
+                                <rect key="frame" x="27" y="76" width="332" height="147"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fruits_veggies_icon" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-cI-zG9">
-                                        <rect key="frame" x="0.0" y="0.0" width="119" height="142"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drinks_icon" translatesAutoresizingMaskIntoConstraints="NO" id="TQS-cI-zG9">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="147"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LdW-87-chJ">
-                                        <rect key="frame" x="155" y="0.0" width="177" height="142"/>
+                                        <rect key="frame" x="147" y="0.0" width="185" height="147"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of servings:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St7-Ua-mSW">
-                                                <rect key="frame" x="19" y="0.0" width="139" height="64"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Number of sugary drinks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="St7-Ua-mSW">
+                                                <rect key="frame" x="8" y="0.0" width="169.5" height="69"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Re8-lr-rB2">
-                                                <rect key="frame" x="68.5" y="64" width="40" height="78"/>
+                                                <rect key="frame" x="72.5" y="69" width="40" height="78"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="65"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1239,13 +1239,43 @@ amounts below…</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrr-vj-QSv" customClass="JPLoadingButton" customModule="JPLoadingButton">
+                                <rect key="frame" x="156" y="231" width="81" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="Yux-LJ-ioQ"/>
+                                    <constraint firstAttribute="height" constant="30" id="cJk-Vr-csV"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                        <color key="value" red="0.0" green="0.59293702410000004" blue="0.1599473397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" red="0.28235294119999998" green="0.6588235294" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="spinnerColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterAction:" destination="HWp-fz-PoN" eventType="touchUpInside" id="v8h-34-76p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2rM-uM-NSp" firstAttribute="leading" secondItem="Ydn-JG-5Qa" secondAttribute="leading" id="7bS-LH-uaM"/>
+                            <constraint firstItem="2rM-uM-NSp" firstAttribute="top" secondItem="nrr-vj-QSv" secondAttribute="bottom" constant="16" id="DT9-zZ-kPs"/>
                             <constraint firstItem="7mh-Lr-T4i" firstAttribute="bottom" secondItem="4JY-MJ-m5A" secondAttribute="top" id="FdW-Yi-CAL"/>
                             <constraint firstItem="aiB-SE-Rtk" firstAttribute="leading" secondItem="Ydn-JG-5Qa" secondAttribute="leadingMargin" constant="11" id="K52-tC-u54"/>
+                            <constraint firstItem="nrr-vj-QSv" firstAttribute="top" secondItem="aiB-SE-Rtk" secondAttribute="bottom" constant="8" id="SW8-em-PQk"/>
                             <constraint firstItem="aiB-SE-Rtk" firstAttribute="top" secondItem="buL-uz-iys" secondAttribute="bottom" constant="56" id="Sl7-ln-p3b"/>
+                            <constraint firstItem="nrr-vj-QSv" firstAttribute="leading" secondItem="Ydn-JG-5Qa" secondAttribute="leading" constant="156" id="bvG-gj-0ZZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="aiB-SE-Rtk" secondAttribute="trailing" id="cMo-MS-N4T"/>
                             <constraint firstAttribute="trailing" secondItem="2rM-uM-NSp" secondAttribute="trailing" id="cbD-AE-OLC"/>
                             <constraint firstItem="7mh-Lr-T4i" firstAttribute="top" secondItem="2rM-uM-NSp" secondAttribute="bottom" constant="1" id="cpm-7N-XRz"/>
@@ -1462,8 +1492,8 @@ amounts below…</string>
         <image name="apple" width="73" height="69"/>
         <image name="avatar" width="120" height="95"/>
         <image name="boygirlsport" width="277" height="210"/>
+        <image name="drinks_icon" width="111" height="147"/>
         <image name="five_fruits" width="152" height="143"/>
-        <image name="fruits_veggies_icon" width="119" height="142"/>
         <image name="ic_5210" width="41" height="20"/>
         <image name="letsmove" width="317" height="102"/>
     </resources>

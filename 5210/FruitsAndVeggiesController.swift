@@ -46,6 +46,10 @@ class FruitsAndVeggiesController: UIViewController {
     @IBOutlet weak var numberOfServingsLabel: UILabel!
     //MARK: Actions
 
+
+    @IBAction func enterAction(_ sender: Any) {
+        enter()
+    }
     @IBAction func segmentControlSwitch(_ sender: Any) {
         collectionView.reloadData()
     }
@@ -61,15 +65,19 @@ class FruitsAndVeggiesController: UIViewController {
         case .FruitsAndVeggies:
             self.segmentControl.isHidden = false
             titleLabel.text = "Number of servings:"
+            titleImageView.image = #imageLiteral(resourceName: "fruits_veggies_icon")
         case .ScreenTime:
             self.segmentControl.isHidden = true
-            titleLabel.text = "Screen time hours"
+            titleLabel.text = "Screen time hours:"
+            titleImageView.image = #imageLiteral(resourceName: "screen_time_icon")
         case .Activity:
             self.segmentControl.isHidden = true
-            titleLabel.text = "Activity hours"
+            titleLabel.text = "Activity hours:"
+            titleImageView.image = #imageLiteral(resourceName: "activity_icon")
         case .Drinks:
-            titleLabel.text = "Number of sugary drinks"
+            titleLabel.text = "Number of sugary drinks:"
             self.segmentControl.isHidden = false
+            titleImageView.image = #imageLiteral(resourceName: "drinks_icon")
         }
       
         foodModel = FoodModel(forType: self.type)
@@ -78,6 +86,11 @@ class FruitsAndVeggiesController: UIViewController {
     
     func configureViewController(type: TrackingType) {
         self.type = type
+    }
+    
+    func enter() {
+        //Get totals, populate database, and pop the controller back
+        self.navigationController?.popViewController(animated: true)
     }
     
     
