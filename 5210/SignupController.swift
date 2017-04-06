@@ -17,6 +17,8 @@ class SignupController: UIViewController {
     
     //MARK: Outlets
     
+    
+    @IBOutlet weak var houseField: SkyFloatingLabelTextField!
     @IBOutlet weak var profileImageView: ProfileImageView!
     @IBOutlet weak var nameField: SkyFloatingLabelTextField!
     @IBOutlet weak var emailField: SkyFloatingLabelTextField!
@@ -24,9 +26,11 @@ class SignupController: UIViewController {
     @IBOutlet weak var zipField: SkyFloatingLabelTextField!
     @IBOutlet weak var signupButton: JPLoadingButton!
     
+    @IBOutlet weak var ageField: SkyFloatingLabelTextField!
     //MARK: Actions
     
     @IBAction func signupAction(_ sender: Any) {
+        signup()
     }
     //MARK: Properties
     
@@ -37,6 +41,7 @@ class SignupController: UIViewController {
         addProfileImageButton()
         
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1)
+        self.navigationController?.navigationBar.isHidden = false
     }
     
     //MARK: UI
@@ -67,6 +72,9 @@ class SignupController: UIViewController {
                     AlertUtility.showErrorAlert(error: error!)
                     return
                 }
+                let newUser = User(name: self.nameField.text!, houseName: self.houseField.text!, age: Int(self.ageField.text!)!, zip: Int(self.zipField.text!)!, uid: (user?.uid)!, email: (user?.email)!)
+                
+                FireClient.create(user: newUser)
                 
                 self.segueToHomeScreen()
                 
@@ -82,7 +90,12 @@ class SignupController: UIViewController {
     //MARK: Segue
     
     func segueToHomeScreen() {
-        
+    
+        performSegue(withIdentifier: "Five210Segue", sender: self)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
     }
 
 }

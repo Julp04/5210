@@ -20,6 +20,7 @@
 		140D08151E8F53390091AD62 /* AlertUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08141E8F53390091AD62 /* AlertUtility.swift */; };
 		140D08171E8F58140091AD62 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08161E8F58140091AD62 /* ProfileImageView.swift */; };
 		140D08191E8FD91D0091AD62 /* SignupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D08181E8FD91D0091AD62 /* SignupController.swift */; };
+		14334CFB1E92A78F00264FAE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14334CFA1E92A78F00264FAE /* User.swift */; };
 		145621321E912F9500579C7E /* Five210ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145621311E912F9500579C7E /* Five210ViewController.swift */; };
 		145621341E9131BD00579C7E /* Five210NavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145621331E9131BD00579C7E /* Five210NavBar.swift */; };
 		145621361E914E7100579C7E /* FruitsAndVeggiesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145621351E914E7100579C7E /* FruitsAndVeggiesController.swift */; };
@@ -85,6 +86,7 @@
 		140D08141E8F53390091AD62 /* AlertUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertUtility.swift; sourceTree = "<group>"; };
 		140D08161E8F58140091AD62 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		140D08181E8FD91D0091AD62 /* SignupController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignupController.swift; sourceTree = "<group>"; };
+		14334CFA1E92A78F00264FAE /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		145621311E912F9500579C7E /* Five210ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Five210ViewController.swift; sourceTree = "<group>"; };
 		145621331E9131BD00579C7E /* Five210NavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Five210NavBar.swift; sourceTree = "<group>"; };
 		145621351E914E7100579C7E /* FruitsAndVeggiesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitsAndVeggiesController.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		140D08061E8F33760091AD62 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				14334CFA1E92A78F00264FAE /* User.swift */,
 				1456213F1E91B06300579C7E /* FoodModel.swift */,
 			);
 			name = Model;
@@ -481,6 +484,7 @@
 				140D08101E8F4FF50091AD62 /* FireClient.swift in Sources */,
 				1456213E1E915D6400579C7E /* FoodView.swift in Sources */,
 				145621401E91B06300579C7E /* FoodModel.swift in Sources */,
+				14334CFB1E92A78F00264FAE /* User.swift in Sources */,
 				1456213C1E914F1400579C7E /* DrinksViewController.swift in Sources */,
 				145621361E914E7100579C7E /* FruitsAndVeggiesController.swift in Sources */,
 				140D08011E8F33490091AD62 /* BackgroundVideo.swift in Sources */,

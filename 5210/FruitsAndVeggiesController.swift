@@ -43,8 +43,12 @@ class FruitsAndVeggiesController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         delegate = self
-        
-
+    
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("Segue")
     }
 }
 

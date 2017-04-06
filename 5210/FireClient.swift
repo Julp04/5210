@@ -14,8 +14,15 @@ import FirebaseDatabase
 //Class to handle all Firebase calls and querys from database
 class FireClient {
     
-    let ref = FIRDatabase.database().reference()
-    let user = FIRAuth.auth()!.currentUser!
+   
+    
+    static func create(user: User) {
+        let ref = FIRDatabase.database().reference()
+        let currentUser = FIRAuth.auth()!.currentUser!
+        let usersRef = ref.child("users").child(currentUser.uid)
+        
+        usersRef.setValue(["name" : user.name, "houseName": user.houseName, "age": user.age, "email": user.email, "zip": user.zip])
+    }
 
     
     
