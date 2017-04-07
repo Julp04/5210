@@ -17,7 +17,6 @@ class ProfileImageView: UIImageView {
     override func layoutSubviews() {
         layer.cornerRadius = self.bounds.size.width / 2.0
         layer.masksToBounds = true
-        layer.borderColor = UIColor.white.cgColor
         layer.borderWidth = 2.0
     }
 

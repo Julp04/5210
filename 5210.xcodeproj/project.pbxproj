@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		140C720C1E9721E700FA780E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140C720B1E9721E700FA780E /* ProfileViewController.swift */; };
 		140D07EB1E8F280E0091AD62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140D07EA1E8F280E0091AD62 /* AppDelegate.swift */; };
 		140D07F01E8F280E0091AD62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 140D07EE1E8F280E0091AD62 /* Main.storyboard */; };
 		140D07F21E8F280E0091AD62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 140D07F11E8F280E0091AD62 /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		140C720B1E9721E700FA780E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		140D07E71E8F280E0091AD62 /* 5210.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 5210.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		140D07EA1E8F280E0091AD62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		140D07EF1E8F280E0091AD62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 		140D08021E8F33500091AD62 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				140C720B1E9721E700FA780E /* ProfileViewController.swift */,
 				145621351E914E7100579C7E /* FruitsAndVeggiesController.swift */,
 				145621371E914E9200579C7E /* ActivityViewController.swift */,
 				1456213B1E914F1400579C7E /* DrinksViewController.swift */,
@@ -479,6 +482,7 @@
 				140D08151E8F53390091AD62 /* AlertUtility.swift in Sources */,
 				140D07FF1E8F331E0091AD62 /* OnboardViewController.swift in Sources */,
 				140D080A1E8F33C60091AD62 /* LoginViewController.swift in Sources */,
+				140C720C1E9721E700FA780E /* ProfileViewController.swift in Sources */,
 				145621381E914E9200579C7E /* ActivityViewController.swift in Sources */,
 				145621341E9131BD00579C7E /* Five210NavBar.swift in Sources */,
 				140D08101E8F4FF50091AD62 /* FireClient.swift in Sources */,

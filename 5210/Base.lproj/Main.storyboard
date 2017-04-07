@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vtV-Xd-wTd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="N90-q1-AcX">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -448,7 +448,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="go"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="floatingLabelYPadding">
@@ -524,7 +524,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JOJ-gf-bQn" customClass="ProfileImageView" customModule="_210" customModuleProvider="target">
-                                <rect key="frame" x="127" y="50" width="120" height="120"/>
+                                <rect key="frame" x="127" y="72" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="Uz5-lp-vZ8"/>
                                     <constraint firstAttribute="height" constant="120" id="m9a-FY-bKg"/>
@@ -538,9 +538,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="JOJ-gf-bQn" secondAttribute="trailing" constant="112" id="EkO-Cl-9ws"/>
                             <constraint firstItem="JOJ-gf-bQn" firstAttribute="leading" secondItem="qS0-NJ-i1n" secondAttribute="leadingMargin" constant="111" id="HX4-un-gxl"/>
                             <constraint firstItem="u3i-cs-DE7" firstAttribute="top" secondItem="3JK-Py-lPh" secondAttribute="bottom" constant="8" id="NeA-vr-ofe"/>
-                            <constraint firstItem="JOJ-gf-bQn" firstAttribute="top" secondItem="lld-cY-HBc" secondAttribute="bottom" constant="-14" id="Uwi-nc-l0M"/>
+                            <constraint firstItem="JOJ-gf-bQn" firstAttribute="top" secondItem="lld-cY-HBc" secondAttribute="bottom" constant="8" id="Uwi-nc-l0M"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u3i-cs-DE7" secondAttribute="trailing" id="Wfd-Ld-aCh"/>
-                            <constraint firstItem="3JK-Py-lPh" firstAttribute="top" secondItem="JOJ-gf-bQn" secondAttribute="bottom" constant="50" id="Y3a-lz-Koa"/>
+                            <constraint firstItem="3JK-Py-lPh" firstAttribute="top" secondItem="JOJ-gf-bQn" secondAttribute="bottom" constant="28" id="Y3a-lz-Koa"/>
                             <constraint firstAttribute="leadingMargin" secondItem="3JK-Py-lPh" secondAttribute="leading" id="hUQ-Js-Iwr"/>
                         </constraints>
                     </view>
@@ -1314,7 +1314,32 @@ amounts below…</string>
             </objects>
             <point key="canvasLocation" x="7900" y="-585"/>
         </scene>
-        <!--Item-->
+        <!--Games-->
+        <scene sceneID="QfA-ze-fL2">
+            <objects>
+                <viewController id="eCt-LM-BhH" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="33r-Lz-bZ1"/>
+                        <viewControllerLayoutGuide type="bottom" id="OZf-lH-FOj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eBO-Q4-KVc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Games Copy" translatesAutoresizingMaskIntoConstraints="NO" id="CEP-a0-MXq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Games" id="dtE-W3-j54"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vZs-9W-Vo9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5180" y="-2912.2938530734637"/>
+        </scene>
+        <!--About-->
         <scene sceneID="SnJ-d2-F8F">
             <objects>
                 <viewController id="cT8-rE-Frv" sceneMemberID="viewController">
@@ -1325,20 +1350,51 @@ amounts below…</string>
                     <view key="view" contentMode="scaleToFill" id="a1L-qD-aef">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="About Page" translatesAutoresizingMaskIntoConstraints="NO" id="FY4-j3-rTo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="fg1-15-MTW"/>
+                    <tabBarItem key="tabBarItem" title="About" id="fg1-15-MTW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U59-Nb-NoH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5252" y="-2015"/>
+            <point key="canvasLocation" x="5070" y="-2161"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="2Ew-Ex-GGv">
+            <objects>
+                <viewController id="1ch-08-szf" customClass="ProfileViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1fw-pO-QhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hTU-pD-cTZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ly0-TH-dVg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Profile Page" translatesAutoresizingMaskIntoConstraints="NO" id="NFC-0A-55m">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Profile" id="pdN-3H-9KU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vva-SE-iwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4060" y="-2393.2533733133437"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R6c-PK-Sdq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N90-q1-AcX" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="OnboardViewController" automaticallyAdjustsScrollViewInsets="NO" id="N90-q1-AcX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1363,12 +1419,14 @@ amounts below…</string>
                     </tabBar>
                     <connections>
                         <segue destination="d1g-sd-pbi" kind="relationship" relationship="viewControllers" id="WVV-JQ-27G"/>
+                        <segue destination="1ch-08-szf" kind="relationship" relationship="viewControllers" id="EuV-Rw-V86"/>
                         <segue destination="cT8-rE-Frv" kind="relationship" relationship="viewControllers" id="gJZ-gI-6Fn"/>
+                        <segue destination="eCt-LM-BhH" kind="relationship" relationship="viewControllers" id="PVI-Iw-0Ao"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0e-Yv-GPc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3548" y="-1566.5667166416792"/>
+            <point key="canvasLocation" x="3380" y="-1621"/>
         </scene>
         <!--Item-->
         <scene sceneID="k6U-JA-7dy">
@@ -1376,7 +1434,7 @@ amounts below…</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1g-sd-pbi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="Smoke.png" selectedImage="ic_5210" id="2g1-uf-6lk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1391,6 +1449,9 @@ amounts below…</string>
         </scene>
     </scenes>
     <resources>
+        <image name="About Page" width="375" height="603"/>
+        <image name="Games Copy" width="375" height="590"/>
+        <image name="Profile Page" width="375" height="667"/>
         <image name="Smoke.png" width="32" height="32"/>
         <image name="after_activity" width="146" height="151"/>
         <image name="after_drinks" width="137" height="153"/>

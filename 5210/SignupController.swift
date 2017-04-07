@@ -42,13 +42,16 @@ class SignupController: UIViewController {
         
         self.navigationController?.navigationBar.barTintColor = #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1)
         self.navigationController?.navigationBar.isHidden = false
+        
+        profileImageView.image = #imageLiteral(resourceName: "avatar")
+        profileImageView.layer.borderColor = #colorLiteral(red: 0.9699707031, green: 0.3545121978, blue: 0.5182423858, alpha: 1).cgColor
+        profileImageView.layer.borderWidth = 2.0
     }
     
     //MARK: UI
     
     func addProfileImageButton() {
         let button = UIButton(frame: profileImageView.frame)
-        button.backgroundColor = .blue
         button.addTarget(self, action: #selector(SignupController.changeAvatar), for: .touchUpInside)
         button.layer.cornerRadius = profileImageView.layer.cornerRadius
         button.layer.masksToBounds = true
