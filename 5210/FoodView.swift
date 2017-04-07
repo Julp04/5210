@@ -53,8 +53,9 @@ class FoodView: UIView {
     private var labelWidth: CGFloat!
     
     var food: Food!
+    var type: TrackingType = .FruitsAndVeggies
     
-    var count: Int = 0 {
+    var count: Double = 0 {
         didSet {
             addButton.isHidden = count > 0
             countLabel.text = String(count)
@@ -62,32 +63,16 @@ class FoodView: UIView {
         }
     }
     
-
-    required init?(coder aDecoder: NSCoder) {
-        
-        
-        super.init(coder: aDecoder)
-        
-        imageViewHeight = frame.height - kControlsHeight
-        labelWidth = frame.width - 2 * kButtonWidth
-        
-        setupButtons()
-        setupImageView()
-        setupLabelView()
-        
-        addSubview(imageView)
-        addSubview(minusButton)
-        addSubview(plusButton)
-        addSubview(labelView)
-        addSubview(addButton)
-    }
     
    
     
-    init(frame: CGRect, food: Food) {
+    init(frame: CGRect, food: Food, type: TrackingType) {
         self.food = food
+        self.type = type
         super.init(frame: frame)
         backgroundColor = .white
+        
+        
         
         self.image = food.image
         self.foodName = food.name
@@ -111,6 +96,10 @@ class FoodView: UIView {
         bringSubview(toFront: nameLabel)
         
        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
     }
     
     
@@ -165,18 +154,32 @@ class FoodView: UIView {
     }
     
     internal func incrementCount() {
-        food.numberOfServings += 1
-        count += 1
         
-        playSound()
+        switch type {
+        case .Activity, .ScreenTime:
+            count += 0.25
+        case .Drinks:
+            food.numberOfServings += 1
+            count += 1
+        case .FruitsAndVeggies:
+            food.numberOfServings += 1
+            count += 1
+            playSound()
+        }
+        
     }
     
     internal func decrementCount() {
         guard count >= 0 else {
             return
         }
-        food.numberOfServings -= 1
-        count -= 1
+        
+        switch type {
+        case .Activity, .ScreenTime:
+            count -= 0.25
+        case .Drinks, .FruitsAndVeggies:
+            count -= 1.0
+        }
         
     }
     

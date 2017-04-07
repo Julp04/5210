@@ -29,7 +29,8 @@ class Five210ViewController: UIViewController {
     @IBOutlet weak var drinksImageView: UIImageView!
 
     @IBOutlet weak var activityStarThree: CosmosView!
-    @IBOutlet weak var activityStar2: CosmosView!
+    
+    @IBOutlet weak var activityStar1: CosmosView!
 
     @IBOutlet weak var fruitStarsThree: CosmosView!
     @IBOutlet weak var fruitStars2: CosmosView!
@@ -60,55 +61,161 @@ class Five210ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        allStars = [activityStarThree, activityStar2, fruitStars2, fruitStarsThree, drinksStar, screenStar]
+        allStars = [activityStarThree, activityStar1, fruitStars2, fruitStarsThree, drinksStar, screenStar]
         
         setupTabBar()
         setupImageViews()
         setupButtons()
     
-        setupForBeforeEntering()
-        setUpAfterEntering()
-        
+       
         self.navigationController?.navigationBar.tintColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
         
         
+        FireClient.currentUser { (user) in
+            let name = user.name
+            self.welcomeLabel.text = "Hi \(name!)!"
+        }
+        
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        checkFruits()
+        checkDrinks()
+        checkActivity()
+        checkScreenTime()
+        
+    }
+    
+    
+    func checkFruits() {
+        FireClient.checkForTodaysStats(forType: .FruitsAndVeggies) { (infoEntered) in
+            if infoEntered {
+                self.updateStarsForFruits()
+                self.fruitsImageView.image = #imageLiteral(resourceName: "after_fruits")
+            }else {
+                //Hide stars and show other image
+                self.fruitsImageView.image = #imageLiteral(resourceName: "before_fruits")
+                self.fruitStars2.alpha = 0.0
+                self.fruitStarsThree.alpha = 0.0
+                
+            }
+        }
+    }
+    
+    func updateStarsForFruits() {
+        self.fruitStars2.alpha = 1.0
+        self.fruitStarsThree.alpha = 1.0
+        
+        FireClient.getTotalForFruits { (total) in
+            if total >= 3.0 {
+                self.fruitStarsThree.rating = 3.0
+                self.fruitStars2.rating = total - 3.0
+            }else {
+                self.fruitStarsThree.rating = total
+                self.fruitStars2.rating = 0.0
+            }
+        }
+    }
+    
+    func checkScreenTime() {
+        FireClient.checkForTodaysStats(forType: .ScreenTime) { (infoEntered) in
+            if infoEntered {
+                self.updateStarsForScreenTime()
+                self.screenTimeImageView.image = #imageLiteral(resourceName: "after_screen")
+            }else {
+                self.screenTimeImageView.image = #imageLiteral(resourceName: "before_screen_time")
+                self.screenStar.alpha = 0.0
+            }
+        }
+    }
+    
+    func updateStarsForScreenTime() {
+        self.screenStar.alpha = 1.0
+        
+        FireClient.getTotalScreenTime { (total) in
+            if total <= 2 {
+                self.screenStar.rating = 1.0
+            }else {
+                self.screenStar.rating = 0.0
+            }
+        }
+    }
+    
+    func checkActivity() {
+        FireClient.checkForTodaysStats(forType: .Activity) { (infoEntered) in
+            if infoEntered {
+                self.updateStarsForActivity()
+                self.activityImageView.image = #imageLiteral(resourceName: "after_activity")
+            }else {
+                self.activityImageView.image = #imageLiteral(resourceName: "before_physical_activity")
+                self.activityStarThree.alpha = 0.0
+                self.activityStar1.alpha = 0.0
+        
+            }
+        }
+    }
+    
+    func updateStarsForActivity() {
+        activityStarThree.alpha = 1.0
+        activityStar1.alpha = 1.0
+        
+        FireClient.getTotalForActivity { (total) in
+            
+            switch total {
+            case 0.50:
+                self.activityStarThree.rating = 1.0
+                self.activityStar1.rating = 0.0
+            case 0.51 ... 1.0:
+                self.activityStarThree.rating = 2.0
+                self.activityStar1.rating = 0.0
+            case 1.1 ... 1.50:
+                self.activityStarThree.rating = 3.0
+                self.activityStar1.rating = 0.0
+            case _ where total >= 1.51:
+                self.activityStarThree.rating = 3.0
+                self.activityStar1.rating = 1.0
+            default:
+                self.activityStar1.rating = 0.0
+                self.activityStarThree.rating = 0.0
+            }
+            
+        }
+    }
+    
+    func checkDrinks() {
+        FireClient.checkForTodaysStats(forType: .Drinks) { (infoEntered) in
+            if infoEntered {
+                self.updateStarsForDrinks()
+                self.drinksImageView.image = #imageLiteral(resourceName: "after_drinks")
+            }else {
+                self.drinksImageView.image = #imageLiteral(resourceName: "before_sugary_drinks")
+                self.drinksStar.alpha = 0.0
+            }
+        }
+        
+    }
+    
+    func updateStarsForDrinks() {
+        self.drinksStar.alpha = 1.0
+        
+        FireClient.getDrinks { (water, sugarDrinks) in
+            self.drinksStar.rating = 0.0
+            var rating = 0.0
+            
+            if water >= 1 {
+                rating += 1
+            }
+            
+            if sugarDrinks == 0 {
+                rating += 1
+            }
+            
+            self.drinksStar.rating = rating
+        }
+        
+    }
     //MARK: UI
-    
-    func setupForBeforeEntering() {
-        
-        let beforeFruits = #imageLiteral(resourceName: "before_fruits")
-        let beforeScreenTime = #imageLiteral(resourceName: "before_screen_time")
-        let beforeActivity = #imageLiteral(resourceName: "before_physical_activity")
-        let beforeDrinks = #imageLiteral(resourceName: "before_sugary_drinks")
-        
-        fruitsImageView.image = beforeFruits
-        screenTimeImageView.image = beforeScreenTime
-        activityImageView.image = beforeActivity
-        drinksImageView.image = beforeDrinks
-        
-        allStars.forEach { (starView) in
-            starView.isHidden = true
-        }
-        
-        directionsLabel.text = kDirectionsBeforeText
-    }
-    
-    func setUpAfterEntering() {
-        
-        fruitsImageView.image = #imageLiteral(resourceName: "after_fruits")
-        screenTimeImageView.image = #imageLiteral(resourceName: "after_screen")
-        drinksImageView.image = #imageLiteral(resourceName: "after_drinks")
-        activityImageView.image = #imageLiteral(resourceName: "after_activity")
-        
-        
-        allStars.forEach { (starView) in
-            starView.isHidden = false
-        }
-        
-    }
-    
     
     
     

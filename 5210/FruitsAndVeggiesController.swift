@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import Firebase
 
 
-public enum TrackingType {
-    case FruitsAndVeggies
-    case ScreenTime
-    case Drinks
-    case Activity
+public enum TrackingType: String {
+    case FruitsAndVeggies = "five"
+    case ScreenTime = "two"
+    case Drinks = "zero"
+    case Activity = "one"
 }
 
 
@@ -52,6 +55,19 @@ class FruitsAndVeggiesController: UIViewController {
     }
     @IBAction func segmentControlSwitch(_ sender: Any) {
         collectionView.reloadData()
+        updateWaterCount()
+        
+        switch type {
+        case .Drinks:
+        
+            if segmentControl.selectedSegmentIndex == 0 {
+                self.titleLabel.text = "Number of Sugary Drinks"
+            }else {
+                self.titleLabel.text = "Cups of Water"
+            }
+        default:
+            break
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +81,8 @@ class FruitsAndVeggiesController: UIViewController {
         case .FruitsAndVeggies:
             self.segmentControl.isHidden = false
             titleLabel.text = "Number of servings:"
+            self.segmentControl.setTitle("Fruits", forSegmentAt: 0)
+            self.segmentControl.setTitle("Veggies:", forSegmentAt: 1)
             titleImageView.image = #imageLiteral(resourceName: "fruits_veggies_icon")
         case .ScreenTime:
             self.segmentControl.isHidden = true
@@ -77,6 +95,8 @@ class FruitsAndVeggiesController: UIViewController {
         case .Drinks:
             titleLabel.text = "Number of sugary drinks:"
             self.segmentControl.isHidden = false
+            self.segmentControl.setTitle("Sugary Drinks", forSegmentAt: 0)
+            self.segmentControl.setTitle("Water", forSegmentAt: 1)
             titleImageView.image = #imageLiteral(resourceName: "drinks_icon")
         }
       
@@ -90,7 +110,42 @@ class FruitsAndVeggiesController: UIViewController {
     
     func enter() {
         //Get totals, populate database, and pop the controller back
+        
+        
+        let date = Date()
+        let calendar = Calendar.current
+        let compononents = calendar.dateComponents([.year, .month, .day], from: date)
+        
+        let year = compononents.year!
+        let month = compononents.month!
+        let day = compononents.day!
+        
+        let dateString = "\(month)\(day)\(year)"
+        
+        
+        var items =  [FoodView]()
+        
+        switch self.type {
+        case .FruitsAndVeggies, .Drinks:
+            for view in foodModel.fruitsView {
+                items.append(view)
+            }
+            
+            for view in foodModel.veggiesView {
+                items.append(view)
+            }
+            
+        case .ScreenTime, .Activity:
+            for view in foodModel.fruitsView {
+                items.append(view)
+            }
+        }
+        
+        FireClient.saveCategory(date: dateString, type: self.type, items: items)
+        
         self.navigationController?.popViewController(animated: true)
+        
+        
     }
     
     
@@ -144,7 +199,7 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
         
         
         switch self.type {
-        case .FruitsAndVeggies:
+        case .FruitsAndVeggies, .Drinks:
             switch segmentControl.selectedSegmentIndex {
             case 0:
                 return foodModel.numberOfFruits()
@@ -153,11 +208,8 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
             default:
                 return 0
             }
-        case .ScreenTime:
-            return foodModel.numberOfFruits()
-            
-        case .Activity: break
-        case .Drinks: break
+        default:
+            break
         }
         return foodModel.numberOfFruits()
     }
@@ -169,7 +221,7 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
         
         
         switch self.type {
-        case .FruitsAndVeggies:
+        case .FruitsAndVeggies, .Drinks:
             switch segmentControl.selectedSegmentIndex {
             case 0:
                 foodView = foodModel.fruitsView[indexPath.row]
@@ -190,14 +242,39 @@ extension FruitsAndVeggiesController: UICollectionViewDataSource {
         
         return cell
     }
+    
+    func updateWaterCount() {
+        var total = 0.0
+        if segmentControl.selectedSegmentIndex == 0  {
+            
+            for item in foodModel.fruitsView {
+                total += item.count
+            }
+            
+        }else {
+            for item in foodModel.veggiesView {
+                total += item.count
+            }
+        }
+        self.numberOfServingsLabel.text = String(total)
+    }
 }
 
 
 extension FruitsAndVeggiesController: ServingsDelegate {
     
     func countChanged() {
-        self.numberOfServingsLabel.text = String(foodModel.totalNumberOfServings())
+        
+        switch type {
+        case .Drinks:
+            updateWaterCount()
+        default:
+            self.numberOfServingsLabel.text = String(foodModel.totalNumberOfServings())
+        }
+        
     }
 }
+
+
 
 

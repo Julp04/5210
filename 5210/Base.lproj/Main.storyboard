@@ -817,14 +817,14 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fur-WN-HUP">
                                                 <rect key="frame" x="0.0" y="0.0" width="376" height="158"/>
                                                 <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="five_fruits" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-dU-QHS">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="after_fruits" translatesAutoresizingMaskIntoConstraints="NO" id="SYA-dU-QHS">
                                                         <rect key="frame" x="0.0" y="0.0" width="188" height="158"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="158" id="c7N-qm-f6t"/>
                                                             <constraint firstAttribute="width" constant="188" id="jSq-Hx-MdW"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="2 Screen Time" translatesAutoresizingMaskIntoConstraints="NO" id="4if-FS-Pbk">
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="after_screen" translatesAutoresizingMaskIntoConstraints="NO" id="4if-FS-Pbk">
                                                         <rect key="frame" x="188" y="0.0" width="188" height="158"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="158" id="6s7-Af-KFa"/>
@@ -838,14 +838,14 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pnV-Hf-fEQ">
                                         <rect key="frame" x="0.0" y="158" width="376" height="158"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="1 Physical Activity" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-aZ-u3r">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="after_activity" translatesAutoresizingMaskIntoConstraints="NO" id="VSB-aZ-u3r">
                                                 <rect key="frame" x="0.0" y="0.0" width="188" height="158"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="158" id="aHu-Ii-mhM"/>
                                                     <constraint firstAttribute="width" constant="188" id="vUi-BE-R5P"/>
                                                 </constraints>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="0 Sugary Drinks" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-3F-jmp">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="after_drinks" translatesAutoresizingMaskIntoConstraints="NO" id="lq3-3F-jmp">
                                                 <rect key="frame" x="188" y="0.0" width="188" height="158"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="158" id="AMY-YF-Zsf"/>
@@ -894,17 +894,17 @@ amounts below…</string>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="0rp-Sx-lG0">
-                                <rect key="frame" x="69" y="309" width="286" height="224"/>
+                                <rect key="frame" x="69" y="309" width="297" height="219"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="UQc-mx-gMO">
-                                        <rect key="frame" x="0.0" y="0.0" width="286" height="66"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="297" height="66"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tMT-JH-gvh">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="66"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="122" height="66"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JoC-9D-1GI" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="0.0" y="0.0" width="111" height="34"/>
+                                                        <rect key="frame" x="5.5" y="0.0" width="111" height="34"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="111" id="DL0-FJ-Iqc"/>
@@ -941,7 +941,7 @@ amounts below…</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mlW-k0-Xne" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="21" y="34" width="69" height="32"/>
+                                                        <rect key="frame" x="26.5" y="34" width="69" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="cCT-8D-3Lf"/>
@@ -980,7 +980,7 @@ amounts below…</string>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IjO-F4-ZWR" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="221" y="0.0" width="65" height="66"/>
+                                                <rect key="frame" x="232" y="0.0" width="65" height="66"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
@@ -1014,11 +1014,11 @@ amounts below…</string>
                                             </view>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="110" translatesAutoresizingMaskIntoConstraints="NO" id="Ac9-iu-Ptf">
-                                        <rect key="frame" x="0.0" y="156" width="286" height="68"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="85" translatesAutoresizingMaskIntoConstraints="NO" id="Ac9-iu-Ptf">
+                                        <rect key="frame" x="0.0" y="156" width="297" height="63"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dof-Hq-06z">
-                                                <rect key="frame" x="0.0" y="0.0" width="111" height="68"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="Dof-Hq-06z">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="63"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ie8-nm-WUB" customClass="CosmosView" customModule="Cosmos">
                                                         <rect key="frame" x="0.0" y="0.0" width="111" height="36"/>
@@ -1058,7 +1058,7 @@ amounts below…</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cue-Ed-WOi" customClass="CosmosView" customModule="Cosmos">
-                                                        <rect key="frame" x="21" y="36" width="69" height="32"/>
+                                                        <rect key="frame" x="21" y="31" width="69" height="32"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="7Ju-1r-aQO"/>
@@ -1090,21 +1090,21 @@ amounts below…</string>
                                                                 <real key="value" value="2"/>
                                                             </userDefinedRuntimeAttribute>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
-                                                                <integer key="value" value="2"/>
+                                                                <integer key="value" value="1"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aol-02-Awm" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="221" y="0.0" width="65" height="68"/>
+                                                <rect key="frame" x="196" y="0.0" width="101" height="63"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                         <real key="value" value="0.0"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="starSize">
-                                                        <real key="value" value="65"/>
+                                                        <real key="value" value="48"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="color" keyPath="filledColor">
                                                         <color key="value" red="1" green="0.76862745099999996" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -1125,7 +1125,7 @@ amounts below…</string>
                                                         <real key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
-                                                        <integer key="value" value="1"/>
+                                                        <integer key="value" value="2"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
@@ -1142,7 +1142,7 @@ amounts below…</string>
                     <navigationItem key="navigationItem" id="yPY-Dm-gfm"/>
                     <connections>
                         <outlet property="activityImageView" destination="VSB-aZ-u3r" id="Zcw-TD-Xdm"/>
-                        <outlet property="activityStar2" destination="cue-Ed-WOi" id="Kiq-ab-CbA"/>
+                        <outlet property="activityStar1" destination="cue-Ed-WOi" id="GZ7-6e-uv4"/>
                         <outlet property="activityStarThree" destination="Ie8-nm-WUB" id="MGJ-t1-07A"/>
                         <outlet property="avatarImageView" destination="vhD-3B-wdh" id="ksn-ib-YLi"/>
                         <outlet property="directionsLabel" destination="pnf-Kq-CHx" id="RKu-Pw-4xZ"/>
@@ -1296,82 +1296,6 @@ amounts below…</string>
             </objects>
             <point key="canvasLocation" x="7028" y="-1332.6836581709147"/>
         </scene>
-        <!--Activity View Controller-->
-        <scene sceneID="4xO-2T-gaG">
-            <objects>
-                <viewController id="YDn-yh-rcB" customClass="ActivityViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="piT-Xq-Ule"/>
-                        <viewControllerLayoutGuide type="bottom" id="LYV-2p-Y29"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HZz-vz-eg0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8ut-c2-dy5">
-                                <rect key="frame" x="60" y="117" width="179" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mba-Ia-2oX">
-                                        <rect key="frame" x="0.0" y="134" width="179" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.92549020049999997" green="0.23529411850000001" blue="0.1019607857" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="+ Add">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwJ-yB-oqh">
-                                        <rect key="frame" x="133" y="134" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.28235294117647058" green="0.6588235294117647" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0N-w1-81V">
-                                        <rect key="frame" x="0.0" y="134" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.28235294119999998" green="0.6588235294" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="-">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="riO-3C-KZG">
-                                        <rect key="frame" x="46" y="134" width="87" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA0-zz-OAQ">
-                                                <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Og-9n-zU4">
-                                        <rect key="frame" x="68" y="105" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="T7C-F4-r3x">
-                                        <rect key="frame" x="46" y="0.0" width="93" height="96"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Has-3W-NhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7030" y="-585"/>
-        </scene>
         <!--Drinks View Controller-->
         <scene sceneID="US3-c4-iw9">
             <objects>
@@ -1389,24 +1313,6 @@ amounts below…</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vs2-Fj-rjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="7900" y="-585"/>
-        </scene>
-        <!--Screen Time View Controller-->
-        <scene sceneID="11G-Qd-kO7">
-            <objects>
-                <viewController id="Yww-Uo-dcg" customClass="ScreenTimeViewController" customModule="_210" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VeH-38-Hqa"/>
-                        <viewControllerLayoutGuide type="bottom" id="EQj-gK-VWw"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="pcT-zq-7Pz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jHV-39-kff" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="7900" y="-1331"/>
         </scene>
         <!--Item-->
         <scene sceneID="SnJ-d2-F8F">
@@ -1432,7 +1338,7 @@ amounts below…</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="N90-q1-AcX" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EtF-wa-9uL" customClass="TransparentNavigationBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1470,7 +1376,7 @@ amounts below…</string>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="d1g-sd-pbi" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" image="Smoke.png" selectedImage="ic_5210" id="2g1-uf-6lk"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QZZ-4q-WeC" customClass="Five210NavBar" customModule="_210" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1485,15 +1391,14 @@ amounts below…</string>
         </scene>
     </scenes>
     <resources>
-        <image name="0 Sugary Drinks" width="137" height="153"/>
-        <image name="1 Physical Activity" width="146" height="151"/>
-        <image name="2 Screen Time" width="135" height="147"/>
         <image name="Smoke.png" width="32" height="32"/>
-        <image name="apple" width="73" height="69"/>
+        <image name="after_activity" width="146" height="151"/>
+        <image name="after_drinks" width="137" height="153"/>
+        <image name="after_fruits" width="152" height="143"/>
+        <image name="after_screen" width="135" height="147"/>
         <image name="avatar" width="120" height="95"/>
         <image name="boygirlsport" width="277" height="210"/>
         <image name="drinks_icon" width="111" height="147"/>
-        <image name="five_fruits" width="152" height="143"/>
         <image name="ic_5210" width="41" height="20"/>
         <image name="letsmove" width="317" height="102"/>
     </resources>

@@ -30,6 +30,9 @@ class FoodModel {
     
     private var drinkNames = ["Sports Drink", "Fruit Drinks", "Soda", "Lemonade", "Flavored Milk", "Iced Tea", "Juice"]
     private var drinkImages = [#imageLiteral(resourceName: "sportsdrink"), #imageLiteral(resourceName: "FruitDrinks"), #imageLiteral(resourceName: "soda"), #imageLiteral(resourceName: "lemonade"), #imageLiteral(resourceName: "flavoredmilk"), #imageLiteral(resourceName: "icedtea"), #imageLiteral(resourceName: "juice")]
+    
+    private var waterNames = ["Water"]
+    private var waterImages = [#imageLiteral(resourceName: "watercup")]
 
     
     
@@ -62,15 +65,15 @@ class FoodModel {
         return veggiesView[indexPath.row].food.image
     }
     
-    func totalNumberOfServings() -> Int {
-            var totalServings: Int = 0
+    func totalNumberOfServings() -> Double {
+        var totalServings: Double = 0.0
             
         for view in veggiesView {
-            totalServings += view.food.numberOfServings
+            totalServings += view.count
         }
             
         for view in fruitsView {
-            totalServings += view.food.numberOfServings
+            totalServings += view.count
         }
             
         return totalServings
@@ -85,7 +88,7 @@ class FoodModel {
                 
                 let fruit = Food(name: name, image: image)
                 
-                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: fruit)
+                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: fruit, type: type)
                 
                 fruitsView.append(foodView)
             }
@@ -98,7 +101,7 @@ class FoodModel {
                 let veggie = Food(name: name, image: image)
                 
                 
-                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: veggie)
+                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: veggie, type: type)
                 
                 veggiesView.append(foodView)
             }
@@ -109,7 +112,7 @@ class FoodModel {
                 
                 let screen = Food(name: name, image: image)
                 
-                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: screen)
+                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: screen, type: type)
                 
                 fruitsView.append(foodView)
             }
@@ -121,7 +124,7 @@ class FoodModel {
                 
                 let activity = Food(name: name, image: image)
                 
-                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: activity)
+                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: activity, type: type)
                 
                 fruitsView.append(foodView)
             }
@@ -133,10 +136,16 @@ class FoodModel {
                 
                 let drinks = Food(name: name, image: image)
                 
-                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: drinks)
+                let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: drinks, type: type)
                 
                 fruitsView.append(foodView)
             }
+            
+            let water = Food(name: "Water", image: #imageLiteral(resourceName: "watercup"))
+            
+            let foodView = FoodView(frame: CGRect(x: 0.0, y: 0.0, width: 184.0, height: 140.0), food: water, type: type)
+            
+            veggiesView.append(foodView)
         }
     }
 }

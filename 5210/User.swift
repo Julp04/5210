@@ -35,7 +35,7 @@ class User
         
         self.name = values["name"] as! String
         self.houseName = values["houseName"] as! String
-        self.uid = values["uid"] as! String
+
         self.email = values["email"] as! String
         self.age = values["age"] as! Int
         self.zip = values["zip"] as! Int
