@@ -50,6 +50,7 @@ PODS:
   - RevealingSplashView (0.1.0)
   - RKDropdownAlert (0.3.0)
   - RSKImageCropper (1.6.0)
+  - SAConfettiView (0.1.8)
   - SkyFloatingLabelTextField (2.0.1)
   - TransitionAnimation (4.0.0):
     - TransitionTreasury (~> 4.0)
@@ -73,6 +74,7 @@ DEPENDENCIES:
   - RevealingSplashView
   - RKDropdownAlert
   - RSKImageCropper
+  - SAConfettiView
   - SkyFloatingLabelTextField (~> 2.0.0)
   - TransitionAnimation
   - TransitionTreasury
@@ -100,11 +102,12 @@ SPEC CHECKSUMS:
   RevealingSplashView: 501dd03d975ba2c4165dd463ea1c7c407fb9d13e
   RKDropdownAlert: f4b3364c251829ad439dc666836a1f2dad26f4c7
   RSKImageCropper: 6903235c7a8a79acb1e1f3490e2c911b858f8208
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
   SkyFloatingLabelTextField: 070e749632ffd608d6fd9db3fa488a822524997c
   TransitionAnimation: c397b9ca41ab593b35b1e8f8673df17bae0db20a
   TransitionTreasury: dcf3fe6e5c740525d9e7d4544af45e6fbfd71c88
   UICircularProgressRing: 853758575ad09229a41f20da137faaeae8b2f1b9
 
-PODFILE CHECKSUM: 3701afd4de912e2ea08e5ae89beb062a592dc97e
+PODFILE CHECKSUM: 03fd2a0a9145d686ee8b53f226ea6571e242d1ba
 
 COCOAPODS: 1.2.0

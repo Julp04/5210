@@ -26,6 +26,7 @@ pod 'Firebase/Core'
     pod 'Pageboy'
 pod 'UICircularProgressRing'
 pod 'Cosmos', '~> 8.0'
+pod 'SAConfettiView'
 
   # Pods for 5210
 

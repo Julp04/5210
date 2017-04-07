@@ -89,6 +89,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SAConfettiView-SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SAConfettiView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SkyFloatingLabelTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -117,22 +127,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>151ABD2784A13254041443F4B10192C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>1613271357771814C71601D90B787D94</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>2AD58F68FA05D6891F02DB10D3FDF624</key>
+		<key>2AF8746A64940C049CF052AA6272C1DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>309C1240E673CE7A183C0AFCB956446B</key>
+		<key>2C414D87A0AC4DFD17E2CE535E3C82B6</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48AE0EB9FF7C4D6D4D67A1AA9566923D</key>
+		<key>3077740586E867CC5DA4E86C67299F85</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3ECEFAEE189E4623C8B0D60CD498A2AC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -152,7 +172,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6317D334434F0C9FD63AB999C3218A9E</key>
+		<key>532624C09D6AE2AFD66D69586E4DB37B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>61205FD8824140BB294C97CDF4864082</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -167,22 +192,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8566BE29AD5C49B2F075EAE1D5D593E2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>9DAEBA7B361F0F4E328DF3146B448080</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B025B26C49482C1AC5447988C6064906</key>
+		<key>AAFB89C2053206753E02591A2A070AED</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B7F4865F61F1AE32D9CF23B4894727AB</key>
+		<key>ACDE3875D121D3B928B24977A01C46BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -202,7 +222,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CA5A06BDAD21598E5AFB9077A4CD9F08</key>
+		<key>EC29B120B0F7BC94BA00E71D2408FDC3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -212,7 +232,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FD6196C5D281E91FF5F850A164168259</key>
+		<key>FFD1D2079C6BAA4D72A7878584AA0AC8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

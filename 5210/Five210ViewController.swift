@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import SAConfettiView
 
 class Five210ViewController: UIViewController {
     
@@ -47,6 +48,9 @@ class Five210ViewController: UIViewController {
     
     var type: TrackingType!
     
+    var confettie: SAConfettiView!
+    
+    
    
 
     
@@ -76,6 +80,9 @@ class Five210ViewController: UIViewController {
             self.welcomeLabel.text = "Hi \(name!)!"
         }
         
+        confettie = SAConfettiView(frame: view.bounds)
+        confettie.type = .Confetti
+        view.addSubview(confettie)
         
     }
     
@@ -84,6 +91,24 @@ class Five210ViewController: UIViewController {
         checkDrinks()
         checkActivity()
         checkScreenTime()
+        checkForConfettie()
+        
+    }
+    
+    func checkForConfettie() {
+        
+        confettie.stopConfetti()
+        confettie.isUserInteractionEnabled = false
+        
+        
+        
+        if fruitStars2.rating >= 2.0 && fruitStarsThree.rating >= 3.0 && screenStar.rating >= 1 && activityStar1.rating >= 1 && activityStarThree.rating >= 3.0 && drinksStar.rating >= 2.0 {
+            view.addSubview(confettie)
+            
+            confettie.startConfetti()
+            
+            directionsLabel.text = "Congratulations! You got every star for today! Keep it up!"
+        }
         
     }
     
