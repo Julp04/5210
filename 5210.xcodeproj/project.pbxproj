@@ -419,7 +419,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "program=\"sketchtool\"\ncondition=$(which $program 2>/dev/null | grep -v \"not found\" | wc -l)\nif [ $condition -eq 0 ] ; then\necho \"$program is not installed\"\nfi\n\n#python \"$PROJECT_DIR/Design/slice.py\" \"$PROJECT_DIR/Design/Designs.sketch\" \"$PROJECT_DIR/5210/Assets.xcassets\"";
+			shellScript = "program=\"sketchtool\"\ncondition=$(which $program 2>/dev/null | grep -v \"not found\" | wc -l)\nif [ $condition -eq 0 ] ; then\necho \"$program is not installed\"\nelse\npython \"$PROJECT_DIR/Design/slice.py\" \"$PROJECT_DIR/Design/Designs.sketch\" \"$PROJECT_DIR/5210/Assets.xcassets\"\nfi\n";
 		};
 		2513DF2260818C9CBA0DACE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
