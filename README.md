@@ -2,7 +2,7 @@
 An iOS application made during the [Steel City Codefest](http://www.steelcitycodefest.com/)
 
 ## About
-[5210]() is a health promotion campaigns designed to improve families’ and children’s health. It spreads a simple message about behaviors that support health-promoting behaviors in children throughout communities, where families work, live, and play, and how parents can aid in supporting children’s health.
+In 2015, Let's Move Pittsburgh (LMP) launched a [5-2-1-0](http://phipps.conservatory.org/lets-move-pittsburgh/our-programs/5-2-1-0) initiative that reinforces four healthy habits for kids: 5 servings of fruits and veggies, 2 hours or less of recreational screen time, 1 hour of more of physical activity and 0 sugary drinks- every day. Let's Move Pittsburgh promotes the 5-2-1-0 message through a media campaign and coordinates healthy programs at early learning centers, schools, out of school sites and healthcare practices to make it easier for kids to practice 5-2-1-0. The team at Let's Move Pittsburgh envisions a tracker app designed for kids and focus on positive ways to make it easy and fun to adopt a healthy lifestyle.
 
 ## Challenge
 
@@ -17,7 +17,7 @@ We had one week to come up with a prototype
 ## Funfact
 Mangopair won [People's Choice](http://www.steelcitycodefest.com/results) in the competition
 
-[!Alt text](
+![Alt text](https://github.com/Julp04/5210/blob/master/mangopair.jpg)
 
 
 ## Prototype
